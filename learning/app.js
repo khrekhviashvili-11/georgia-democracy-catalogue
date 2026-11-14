@@ -28,7 +28,7 @@ function modulesFor(d){
   "2026-12-11":[["Prompt Engineering for ChatGPT","M4: Few-Shot Examples — ვიდეოები (ნაწილი 1)","https://www.coursera.org/learn/prompt-engineering"],["Gemini Notebook / NotebookLM","15-წუთიანი საცდელი კვლევა","https://notebooklm.google.com/"]],
   "2026-12-20":[["Research Data Management and Sharing","M2: Data Management Planning — დარჩენილი ნაწილი","https://www.coursera.org/learn/data-management"],["Introduction to GitHub Actions","GitHub Actions-ის მიმოხილვა","https://www.coursera.org/projects/introduction-to-github-actions"]]
  };
- var found=options[d.date];return found?found.map(function(a){return {course:a[0],module:a[1],url:a[2]}}):[{course:d.course,module:d.module,url:d.url}];
+ var found=options[d.date];var existing=found?found.map(function(a){return {course:a[0],module:a[1],url:a[2]}}):[{course:d.course,module:d.module,url:d.url}];return existing.concat((d.extras||[]).map(function(x){return {course:x.course,module:x.module,url:x.url,exercise:x.exercise}}));
 }
 function itemCount(t,s){if(t==="w")return 2;var d=getDay(s);return d?modulesFor(d).length+1:2}
 function doneCount(t,s){var sum=Number(complete(t,s,"practice"));if(t==="w")return sum+Number(complete(t,s,"learn"));var d=getDay(s);if(!d)return sum+Number(complete(t,s,"learn"));modulesFor(d).forEach(function(m,i){sum+=Number(complete(t,s,i===0?"learn":"learn"+(i+1)))});return sum}
@@ -79,7 +79,7 @@ function renderDailyTaskCards(d){
  var mods=modulesFor(d),out='<div class="tasks">';
  mods.forEach(function(m,i){
    var code=i===0?"learn":"learn"+(i+1),n=String(i+1).padStart(2,"0");
-   out+='<article class="task-card '+(complete("d",d.date,code)?"done":"")+'"><div class="task-card-head"><span class="eyebrow">'+n+' / LEARN</span><span class="badge accent">სასწავლო მოდული</span></div><h3>'+tb(m.course)+'</h3><p class="module-name">'+tb(m.module)+'</p><div class="links">'+(mods.length>1?link("კურსის გახსნა",m.url):courseLinks(d))+'</div><div class="task-footer">'+iconCheck("d",d.date,code,"მოდული შესრულებულია")+'<span class="badge">'+String(d.hours).replace(".",",")+" სთ / დღეში"+'</span></div></article>';
+   out+='<article class="task-card '+(complete("d",d.date,code)?"done":"")+'"><div class="task-card-head"><span class="eyebrow">'+n+' / LEARN</span><span class="badge accent">სასწავლო მოდული</span></div><h3>'+tb(m.course)+'</h3><p class="module-name">'+tb(m.module)+'</p>'+(m.exercise?'<p class="practice-quote" style="font-size:12px">მინი-პრაქტიკა: '+tb(m.exercise)+'</p>':'')+'<div class="links">'+(mods.length>1?link("კურსის გახსნა",m.url):courseLinks(d))+'</div><div class="task-footer">'+iconCheck("d",d.date,code,"მოდული შესრულებულია")+'<span class="badge">'+String(d.hours).replace(".",",")+" სთ / დღეში"+'</span></div></article>';
  });
  var num=String(mods.length+1).padStart(2,"0");
  out+='<article class="task-card '+(mods.length>1?"full-line ":"")+(complete("d",d.date,"practice")?"done":"")+'"><div class="task-card-head"><span class="eyebrow">'+num+' / APPLY</span><span class="badge">პრაქტიკული სამუშაო</span></div><h3>ცოდნა პრაქტიკაში</h3><p class="practice-quote">'+tb(d.practice)+'</p>'+(d.note?'<p class="muted" style="font-size:11px">'+tb(d.note)+'</p>':"")+'<div class="task-footer">'+iconCheck("d",d.date,"practice","პრაქტიკული დავალება შესრულებულია")+'<span class="badge">PROJECT LAB</span></div></article></div>';

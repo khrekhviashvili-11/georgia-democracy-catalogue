@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#183f37">
+  <meta name="description" content="პერსონალური სასწავლო სამუშაო სივრცე: ყოველდღიური მოდულები, პრაქტიკული დავალებები და პროგრესი">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <title>Learning OS · სასწავლო სამუშაო სივრცე</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="./" aria-label="Learning OS">
+        <span class="brand-mark">L<span>·</span></span>
+        <span><strong>LEARNING OS</strong><small>PERSONAL WORKSPACE</small></span>
+      </a>
+      <p class="side-kicker">სამუშაო სივრცე</p>
+      <nav class="side-nav" aria-label="მთავარი ნავიგაცია">
+        <button data-view="today" class="active"><span>◫</span> დღიური გეგმა</button>
+        <button data-view="overview"><span>◉</span> პროგრესი</button>
+        <button data-view="courses"><span>▤</span> კურსების ბიბლიოთეკა</button>
+        <button data-view="roadmap"><span>↗</span> მომდევნო თვეები</button>
+        <button data-view="settings"><span>⚙</span> მონაცემები და პარამეტრები</button>
+      </nav>
+      <div class="side-bottom">
+        <div class="sidebar-note"><span class="note-icon">✦</span><strong>სწავლა → მოქმედება</strong><p>ყოველ მოდულს მოსდევს ერთი პრაქტიკული შედეგი.</p></div>
+        <small>14.11.2026 — 14.05.2027</small>
+      </div>
+    </aside>
+    <div class="mobile-topbar"><span class="brand-mark small">L<span>·</span></span><strong>LEARNING OS</strong><span class="live-dot" title="პროგრესი ინახება ამ ბრაუზერში"></span></div>
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left"><span class="edition">PERSONAL LEARNING STUDIO</span><span class="top-sep">/</span><span>2026—2027</span></div>
+        <div class="topbar-right"><button class="theme-btn" id="themeToggle" type="button" title="ფონის რეჟიმი">◐</button><span class="top-pill"><i></i> შენახვა ამ მოწყობილობაზე</span></div>
+      </header>
+      <div id="content" aria-live="polite"><div class="loading">იტვირთება სასწავლო გეგმა…</div></div>
+      <footer class="footer"><span>Learning OS / v1.0</span><span>ერთი მოდული · ერთი სავარჯიშო · ერთი წინსვლა</span></footer>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="ნავიგაცია">
+    <button data-view="today" class="active"><span>◫</span><small>დღე</small></button>
+    <button data-view="overview"><span>◉</span><small>პროგრესი</small></button>
+    <button data-view="courses"><span>▤</span><small>კურსები</small></button>
+    <button data-view="roadmap"><span>↗</span><small>გეგმა</small></button>
+    <button data-view="settings"><span>⚙</span><small>მონაცემები</small></button>
+  </nav>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./data.js"></script>
+  <script defer src="./app.js"></script>
+</body>
+</html>

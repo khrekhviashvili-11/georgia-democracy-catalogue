@@ -1,0 +1,19 @@
+{
+  "name": "Learning OS · სასწავლო გეგმა",
+  "short_name": "Learning OS",
+  "description": "სასწავლო მოდულები, კურსების ბმულები, პრაქტიკული დავალებები და პროგრესი",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5f0",
+  "theme_color": "#1d4439",
+  "lang": "ka",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

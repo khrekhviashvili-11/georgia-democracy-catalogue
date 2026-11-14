@@ -19,8 +19,21 @@ function clampDate(s){return s<FIRST?FIRST:s>LAST?LAST:s}
 function itemId(t,s,a){return t+":"+s+":"+a}
 function complete(t,s,a){return Boolean(state.done[itemId(t,s,a)])}
 function pct(n,d){return d?Math.round(n/d*100):0}
-function percentFor(t,s){return pct(Number(complete(t,s,"learn"))+Number(complete(t,s,"practice")),2)}
-function totals(list,t){var total=list.length*2,done=0;list.forEach(function(x){var s=t==="d"?x.date:x.start;done+=Number(complete(t,s,"learn"))+Number(complete(t,s,"practice"))});return {done:done,total:total,percent:pct(done,total)}}
+function modulesFor(d){
+ var options={
+  "2026-11-14":[["Claude Code 101","M1: What is Claude Code","https://www.coursera.org/learn/claude-code-101"],["Google AI Essentials: Introduction to AI","M1: Welcome to the exciting world of AI","https://www.coursera.org/learn/google-introduction-to-ai"]],
+  "2026-11-15":[["Claude Code 101","M2: Your first prompt","https://www.coursera.org/learn/claude-code-101"],["Google AI Essentials: Introduction to AI","M2–M4: Discover how AI works / AI for professionals / Review","https://www.coursera.org/learn/google-introduction-to-ai"]],
+  "2026-11-19":[["Google AI Essentials: Maximize Productivity","M4–M5","https://www.coursera.org/learn/google-maximize-productivity-with-ai-tools"],["Google AI Essentials: Discover the Art of Prompting","M1","https://www.coursera.org/learn/google-discover-the-art-of-prompting"]],
+  "2026-11-20":[["Google AI Essentials: Discover the Art of Prompting","M2–M4","https://www.coursera.org/learn/google-discover-the-art-of-prompting"],["Google AI Essentials: Use AI Responsibly","M1–M3","https://www.coursera.org/learn/google-use-ai-responsibly"]],
+  "2026-12-11":[["Prompt Engineering for ChatGPT","M4: Few-Shot Examples — ვიდეოები (ნაწილი 1)","https://www.coursera.org/learn/prompt-engineering"],["Gemini Notebook / NotebookLM","15-წუთიანი საცდელი კვლევა","https://notebooklm.google.com/"]],
+  "2026-12-20":[["Research Data Management and Sharing","M2: Data Management Planning — დარჩენილი ნაწილი","https://www.coursera.org/learn/data-management"],["Introduction to GitHub Actions","GitHub Actions-ის მიმოხილვა","https://www.coursera.org/projects/introduction-to-github-actions"]]
+ };
+ var found=options[d.date];return found?found.map(function(a){return {course:a[0],module:a[1],url:a[2]}}):[{course:d.course,module:d.module,url:d.url}];
+}
+function itemCount(t,s){if(t==="w")return 2;var d=getDay(s);return d?modulesFor(d).length+1:2}
+function doneCount(t,s){var sum=Number(complete(t,s,"practice"));if(t==="w")return sum+Number(complete(t,s,"learn"));var d=getDay(s);if(!d)return sum+Number(complete(t,s,"learn"));modulesFor(d).forEach(function(m,i){sum+=Number(complete(t,s,i===0?"learn":"learn"+(i+1)))});return sum}
+function percentFor(t,s){return pct(doneCount(t,s),itemCount(t,s))}
+function totals(list,t){var total=0,done=0;list.forEach(function(x){var k=t==="d"?x.date:x.start;total+=itemCount(t,k);done+=doneCount(t,k)});return {done:done,total:total,percent:pct(done,total)}}
 function allTotals(){var d=totals(DATA.daily,"d"),w=totals(DATA.weekly,"w");return {done:d.done+w.done,total:d.total+w.total,percent:pct(d.done+w.done,d.total+w.total),daily:d,weekly:w}}
 function weekFor(date){return DATA.weekly.find(function(w){return w.start<=date&&w.end>=date})||DATA.weekly[0]}
 function getDay(date){return DATA.daily.find(function(d){return d.date===date})}
@@ -62,17 +75,24 @@ function dailyStrip(){
  for(var n=-3;n<=3;n++){var dt=moveDate(selected,n),d=getDay(dt),p=d?percentFor("d",dt):0;out+='<button type="button" class="day-dot '+(dt===selected?"active ":"")+(p===100?"finished":"")+'" data-date="'+dt+'" '+((dt<FIRST||dt>LAST)?"disabled":"")+'><small>'+dateKa(dt,{weekday:"short"})+'</small><strong>'+dateKa(dt,{day:"numeric"})+'</strong></button>'}
  return out+"</div>";
 }
+function renderDailyTaskCards(d){
+ var mods=modulesFor(d),out='<div class="tasks">';
+ mods.forEach(function(m,i){
+   var code=i===0?"learn":"learn"+(i+1),n=String(i+1).padStart(2,"0");
+   out+='<article class="task-card '+(complete("d",d.date,code)?"done":"")+'"><div class="task-card-head"><span class="eyebrow">'+n+' / LEARN</span><span class="badge accent">სასწავლო მოდული</span></div><h3>'+tb(m.course)+'</h3><p class="module-name">'+tb(m.module)+'</p><div class="links">'+(mods.length>1?link("კურსის გახსნა",m.url):courseLinks(d))+'</div><div class="task-footer">'+iconCheck("d",d.date,code,"მოდული შესრულებულია")+'<span class="badge">'+String(d.hours).replace(".",",")+" სთ / დღეში"+'</span></div></article>';
+ });
+ var num=String(mods.length+1).padStart(2,"0");
+ out+='<article class="task-card '+(mods.length>1?"full-line ":"")+(complete("d",d.date,"practice")?"done":"")+'"><div class="task-card-head"><span class="eyebrow">'+num+' / APPLY</span><span class="badge">პრაქტიკული სამუშაო</span></div><h3>ცოდნა პრაქტიკაში</h3><p class="practice-quote">'+tb(d.practice)+'</p>'+(d.note?'<p class="muted" style="font-size:11px">'+tb(d.note)+'</p>':"")+'<div class="task-footer">'+iconCheck("d",d.date,"practice","პრაქტიკული დავალება შესრულებულია")+'<span class="badge">PROJECT LAB</span></div></article></div>';
+ return out;
+}
 function dailyMain(d){
  var value=percentFor("d",d.date),tot=allTotals(),hr=String(d.hours).replace(".",",");
  return '<div class="page-intro"><div><span class="eyebrow">YOUR DAILY ROUTINE</span><h1>დღის სასწავლო გეგმა</h1><p class="sub">კურსი, მოდული და პრაქტიკა ერთ სამუშაო სივრცეში.</p></div><button class="btn" data-jump="today">დღევანდელი დღე ↗</button></div>'+
  '<div class="grid-head">'+hero(dateKa(d.date,{weekday:"long"}),dateKa(d.date,{day:"numeric",month:"long"}),d.track+" · "+hr+" სთ",value)+
- '<div class="metric-card"><span class="metric-label">დღის შესრულება</span><div class="metric-value">'+value+'%</div>'+progressLine(value)+'<span class="metric-foot">'+(Number(complete("d",d.date,"learn"))+Number(complete("d",d.date,"practice")))+'/2 ამოცანა</span></div>'+
+ '<div class="metric-card"><span class="metric-label">დღის შესრულება</span><div class="metric-value">'+value+'%</div>'+progressLine(value)+'<span class="metric-foot">'+doneCount("d",d.date)+'/'+itemCount("d",d.date)+' ამოცანა</span></div>'+
  '<div class="metric-card"><span class="metric-label">მთლიანი პროგრამა</span><div class="metric-value">'+tot.percent+'%</div>'+progressLine(tot.percent)+'<span class="metric-foot">'+tot.done+' / '+tot.total+' დავალება</span></div></div>'+
  '<div class="date-panel"><button class="btn small nav-arrow" data-shift="-1" aria-label="წინა დღე">‹</button><input type="date" id="chooseDate" class="date-picker" min="'+FIRST+'" max="'+LAST+'" value="'+selected+'" aria-label="აირჩიე თარიღი"><button class="btn small nav-arrow" data-shift="1" aria-label="შემდეგი დღე">›</button><span class="date-summary">ინტენსიური ეტაპი · 61 დღე</span>'+dailyStrip()+'</div>'+
- '<div class="section-head"><h2>დღის ამოცანები</h2><small>ორი დამოუკიდებელი მონიშვნა</small></div>'+
- '<div class="tasks">'+
- '<article class="task-card '+(complete("d",d.date,"learn")?"done":"")+'"><div class="task-card-head"><span class="eyebrow">01 / LEARN</span><span class="badge accent">სასწავლო მოდული</span></div><h3>'+tb(d.course)+'</h3><div class="module-name">'+tb(d.module)+'</div><div class="links">'+courseLinks(d)+'</div><div class="task-footer">'+iconCheck("d",d.date,"learn","მოდული შესრულებულია")+'<span class="badge">'+hr+' სთ / დღეში</span></div></article>'+
- '<article class="task-card '+(complete("d",d.date,"practice")?"done":"")+'"><div class="task-card-head"><span class="eyebrow">02 / APPLY</span><span class="badge">პრაქტიკული სამუშაო</span></div><h3>ცოდნა პრაქტიკაში</h3><p class="practice-quote">'+tb(d.practice)+'</p>'+(d.note?'<p class="muted" style="font-size:11px">'+tb(d.note)+'</p>':'')+'<div class="task-footer">'+iconCheck("d",d.date,"practice","პრაქტიკული დავალება შესრულებულია")+'<span class="badge">PROJECT LAB</span></div></article></div>'+
+ '<div class="section-head"><h2>დღის ამოცანები</h2><small>მოდულები და პრაქტიკა ცალ-ცალკე</small></div>'+renderDailyTaskCards(d)+
  '<div class="panel notes-panel"><h3>✎ სამუშაო ჩანაწერები</h3><textarea data-notes="d:'+d.date+'" placeholder="რა ვისწავლე? რა უნდა შევამოწმო? რა გავაკეთე პრაქტიკაში?">'+tb(state.notes["d:"+d.date]||"")+'</textarea><p class="hint">ჩანაწერი ავტომატურად ინახება მხოლოდ ამ ბრაუზერში.</p></div>';
 }
 function weeklyMain(w){

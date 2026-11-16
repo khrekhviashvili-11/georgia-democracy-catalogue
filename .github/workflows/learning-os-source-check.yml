@@ -1,0 +1,41 @@
+name: Learning OS · Source Check (Manual Lab)
+run-name: "Learning OS test · ${{ inputs.mode }}"
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "demo = fictional test; live = read one public webpage"
+        required: true
+        default: demo
+        type: choice
+        options:
+          - demo
+          - live
+      source_url:
+        description: "For live mode: HTTPS webpage (e.g. https://www.osce.org/odihr)"
+        required: false
+        default: "https://www.osce.org/odihr"
+        type: string
+permissions:
+  contents: read
+jobs:
+  source-check:
+    name: Open a page and show candidate links
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Read the current training files
+        uses: actions/checkout@v4
+      - name: Run source-check demonstration
+        env:
+          LAB_MODE: ${{ inputs.mode }}
+          SOURCE_URL: ${{ inputs.source_url }}
+        run: |
+          python3 learning/monitor/check_sources.py --mode "$LAB_MODE" --url "$SOURCE_URL"
+      - name: Make reports downloadable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-os-source-check-report
+          path: learning/monitor/output/
+          if-no-files-found: ignore

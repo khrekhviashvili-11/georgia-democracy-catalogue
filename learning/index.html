@@ -20,6 +20,7 @@
       <p class="side-kicker">სამუშაო სივრცე</p>
       <nav class="side-nav" aria-label="მთავარი ნავიგაცია">
         <button data-view="today" class="active"><span>◫</span> დღიური გეგმა</button>
+        <button data-view="lab"><span>⚡</span> პრაქტიკული ლაბორატორია</button>
         <button data-view="overview"><span>◉</span> პროგრესი</button>
         <button data-view="courses"><span>▤</span> კურსების ბიბლიოთეკა</button>
         <button data-view="roadmap"><span>↗</span> მომდევნო თვეები</button>
@@ -42,6 +43,7 @@
   </div>
   <nav class="mobile-nav" aria-label="ნავიგაცია">
     <button data-view="today" class="active"><span>◫</span><small>დღე</small></button>
+    <button data-view="lab"><span>⚡</span><small>პრაქტიკა</small></button>
     <button data-view="overview"><span>◉</span><small>პროგრესი</small></button>
     <button data-view="courses"><span>▤</span><small>კურსები</small></button>
     <button data-view="roadmap"><span>↗</span><small>გეგმა</small></button>
@@ -49,6 +51,7 @@
   </nav>
   <div id="toast" role="status" aria-live="polite"></div>
   <script src="./data.js"></script>
+  <script src="./build-lab.js"></script>
   <script defer src="./app.js"></script>
 </body>
 </html>

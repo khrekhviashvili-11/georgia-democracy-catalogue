@@ -137,6 +137,25 @@ function renderRoadmap(){
  var x=percentFor("w",w.start);return '<article class="weekly-card"><div class="weekly-meta"><span class="eyebrow">WEEK '+String(i+1).padStart(2,"0")+'</span><span class="badge">'+tb(dateKa(w.start,{day:"numeric",month:"short"}))+' – '+tb(dateKa(w.end,{day:"numeric",month:"short"}))+'</span><span class="badge accent">'+x+'%</span></div><h3>'+tb(w.track)+'</h3><p><strong>მოდულები: </strong>'+tb(w.module)+'</p><p><strong>შედეგი: </strong>'+tb(w.practice)+'</p><div class="links">'+weekLinks(w)+'</div><div class="weekly-checks">'+iconCheck("w",w.start,"learn","მოდული დასრულებულია")+iconCheck("w",w.start,"practice","პრაქტიკა დასრულებულია")+'<button class="btn small" data-date="'+w.start+'" data-open-day="1">კვირის გახსნა ↗</button></div></article>';
  }).join("")+"</div>";
 }
+function renderLab(){
+ var lab=window.BUILD_LAB;
+ if(!lab)return '<div class="panel"><h2>ლაბორატორია ვერ ჩაიტვირთა</h2><p>განაახლე გვერდი ან გახსენი Research OS-ის მაგალითი GitHub Pages-ზე.</p></div>';
+ var completed=lab.steps.filter(function(step,i){return complete("lab",lab.id,"step"+i)}).length;
+ var progress=pct(completed,lab.steps.length);
+ var tools=lab.what.map(function(x){
+  return '<div class="panel" style="padding:15px"><strong>'+tb(x[0])+'</strong><p class="muted" style="font-size:12px;margin-bottom:0">'+tb(x[1])+'</p></div>'
+ }).join("");
+ var steps=lab.steps.map(function(step,i){
+  return '<article class="weekly-card"><div class="weekly-meta"><span class="eyebrow">STEP '+String(i+1).padStart(2,"0")+'</span><span class="badge accent">'+(complete("lab",lab.id,"step"+i)?"✓ შესრულებულია":"გასაკეთებელია")+'</span></div><h3>'+tb(step.title)+'</h3><p style="color:var(--ink)">'+tb(step.body)+'</p><p class="muted" style="font-size:12px"><strong>ტესტი:</strong> '+tb(step.test)+'</p><div class="weekly-checks">'+iconCheck("lab",lab.id,"step"+i,"შევასრულე ეს ნაბიჯი")+'</div></article>';
+ }).join("");
+ return '<div class="page-intro"><div><span class="eyebrow">RESEARCH OS · HANDS-ON LESSON</span><h1>პრაქტიკული ლაბორატორია</h1><p class="sub">'+tb(lab.subtitle)+'</p></div></div>'+
+ '<div class="grid-head">'+hero("SOURCE → DOCUMENT","დოკუმენტის რეალური წაკითხვა",lab.goal,progress)+
+ '<div class="metric-card"><span class="metric-label">გაკვეთილის პროგრესი</span><div class="metric-value">'+progress+'%</div>'+progressLine(progress)+'<span class="metric-foot">'+completed+' / '+lab.steps.length+' ნაბიჯი</span></div>'+
+ '<div class="metric-card"><span class="metric-label">შესაძლო შედეგი</span><div style="font-size:16px;font-weight:600">PDF-დან ამოღებული ფრაგმენტები</div><span class="metric-foot">ჯერ არ არის AI ბრიფინგი</span></div></div>'+
+ '<div class="panel"><div class="eyebrow">FIRST, OPEN THE EXAMPLE</div><h2>გაიგე წყაროების კავშირი ვიზუალურად</h2><p>'+tb(lab.goal)+'</p><div class="links">'+link("Research OS-ის მაგალითი",lab.demo)+link("GitHub-ის ტესტის გაშვება",lab.workflow)+link("სრული გზამკვლევი",lab.guide)+'</div></div>'+
+ '<div class="section-head"><h2>რა ფუნქცია აქვს თითოეულ ინსტრუმენტს?</h2></div><div class="course-grid">'+tools+'</div>'+
+ '<div class="section-head"><h2>ეტაპობრივი გაკვეთილი</h2><small>თითოეული ნაბიჯი ცალკე მონიშნე</small></div><div class="weekly-grid">'+steps+'</div>';
+}
 function renderSettings(){
  return '<div class="page-intro"><div><span class="eyebrow">YOUR DATA</span><h1>მონაცემები და შენახვა</h1><p class="sub">შენი წინსვლა ეკუთვნის შენ, არა GitHub-ის საჯარო გვერდს.</p></div></div><div class="settings-grid">'+
  '<section class="settings-section"><span class="eyebrow">BACKUP</span><h3>სარეზერვო ასლის ჩამოტვირთვა</h3><p>გადმოიწერე მონიშნული მოდულები, პრაქტიკული დავალებები და ჩანაწერები JSON ფაილად. შეგიძლია სხვა მოწყობილობაშიც აღადგინო.</p><div class="actions"><button class="btn primary" id="exportProgress">↓ ექსპორტი (JSON)</button></div></section>'+
@@ -145,7 +164,7 @@ function renderSettings(){
  '<section class="settings-section"><span class="eyebrow">RESET</span><h3>პროგრესის გასუფთავება</h3><p>ეს მოქმედება გააუქმებს ყველა მონიშვნასა და ჩანაწერს მხოლოდ ამ მოწყობილობაზე. სასწავლო გეგმა არ შეიცვლება.</p><div class="actions"><button class="btn danger" id="clearProgress">ყველა ნიშნის წაშლა</button></div></section></div>';
 }
 function updateNav(){document.querySelectorAll("[data-view]").forEach(function(el){el.classList.toggle("active",el.dataset.view===view)})}
-function render(){if(view==="today")root.innerHTML=renderToday();else if(view==="overview")root.innerHTML=renderOverview();else if(view==="courses")root.innerHTML=renderCourses();else if(view==="roadmap")root.innerHTML=renderRoadmap();else root.innerHTML=renderSettings();updateNav()}
+function render(){if(view==="today")root.innerHTML=renderToday();else if(view==="overview")root.innerHTML=renderOverview();else if(view==="courses")root.innerHTML=renderCourses();else if(view==="roadmap")root.innerHTML=renderRoadmap();else if(view==="lab")root.innerHTML=renderLab();else root.innerHTML=renderSettings();updateNav()}
 function go(v){view=v;render();window.scrollTo(0,0)}
 function jumpDate(dt){selected=clampDate(dt);view="today";render();window.scrollTo(0,0)}
 var toastTimer;

@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "scope": "Georgian documentary source registry; not document catalogue",
+  "selection_policy": "Primary-source research and monitoring publications. Signing a 2024 non-compliance statement is supporting evidence only; non-signature is not evidence of GONGO status. Assess editorial independence, governance, funding and provenance individually.",
+  "sources": [
+    {
+      "id": "institution",
+      "name": "საქართველოს სახალხო დამცველი",
+      "category": "national-independent",
+      "category_ka": "ეროვნული დამოუკიდებელი/საზედამხედველო ინსტიტუტები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "institution",
+      "name": "სახელმწიფო აუდიტის სამსახური",
+      "category": "national-independent",
+      "category_ka": "ეროვნული დამოუკიდებელი/საზედამხედველო ინსტიტუტები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "institution",
+      "name": "პერსონალურ მონაცემთა დაცვის სამსახური",
+      "category": "national-independent",
+      "category_ka": "ეროვნული დამოუკიდებელი/საზედამხედველო ინსტიტუტები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "institution",
+      "name": "სპეციალური საგამოძიებო სამსახური",
+      "category": "national-independent",
+      "category_ka": "ეროვნული დამოუკიდებელი/საზედამხედველო ინსტიტუტები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "institution",
+      "name": "სახელმწიფო ინსპექტორის სამსახური",
+      "category": "national-independent",
+      "category_ka": "ეროვნული დამოუკიდებელი/საზედამხედველო ინსტიტუტები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Historical institution; retain original institutional attribution and assessment period."
+    },
+    {
+      "id": "gyla",
+      "name": "GYLA",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "transparency-international-georgia",
+      "name": "Transparency International Georgia",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "isfed",
+      "name": "ISFED",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "rights-georgia",
+      "name": "Rights Georgia",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "idfi",
+      "name": "IDFI",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "social-justice-center",
+      "name": "Social Justice Center",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "sapari",
+      "name": "Sapari",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "gcrt",
+      "name": "GCRT",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "phr",
+      "name": "PHR",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "wisg",
+      "name": "WISG",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "human-rights-house-tbilisi",
+      "name": "Human Rights House Tbilisi",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "human-rights-center",
+      "name": "Human Rights Center",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "dri",
+      "name": "DRI",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "gdi",
+      "name": "GDI",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "civic-idea",
+      "name": "Civic IDEA",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    },
+    {
+      "id": "eprc",
+      "name": "EPRC",
+      "category": "ngo",
+      "category_ka": "ქართული არასამთავრობო ორგანიზაციები",
+      "review_status": "candidate",
+      "independence_assessment": "not_assessed",
+      "signature_status": "not_checked",
+      "publication_urls": [],
+      "notes": "Verify primary publications and institutional history before ingesting documents."
+    }
+  ]
+}

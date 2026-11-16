@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "description": "Pilot mapping between existing catalogue IDs and full-text document files. Main catalogue remains unchanged.",
+  "documents": {
+    "GEO-015": {
+      "kind": "pdf",
+      "language": "en",
+      "document_symbol": "EUCO 15/24",
+      "document_url": "https://www.consilium.europa.eu/media/qa3lblga/euco-conclusions-27062024-en.pdf",
+      "keywords": [
+        "Georgia",
+        "foreign influence",
+        "accession",
+        "civil society"
+      ],
+      "extraction_status": "ready_to_test"
+    },
+    "GEO-003": {
+      "kind": "pdf",
+      "language": "en",
+      "document_symbol": "A/HRC/55/50/Add.2",
+      "document_url": "https://digitallibrary.un.org/record/4045556/files/A_HRC_55_50_Add.2-EN.pdf",
+      "keywords": [
+        "human rights defenders",
+        "surveillance",
+        "assembly",
+        "Georgia"
+      ],
+      "extraction_status": "ready_to_test"
+    }
+  }
+}

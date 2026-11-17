@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#183f37">
-  <meta name="description" content="პერსონალური სასწავლო სამუშაო სივრცე: ყოველდღიური მოდულები, პრაქტიკული დავალებები და პროგრესი">
+  <meta name="description" content="ტექნოლოგიების სისტემური შესწავლა თავისუფალი ტემპით: საფუძვლები, არჩევითი პრაქტიკა და შესაძლებლობების ბიბლიოთეკა">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
@@ -19,17 +19,18 @@
       </a>
       <p class="side-kicker">სამუშაო სივრცე</p>
       <nav class="side-nav" aria-label="მთავარი ნავიგაცია">
-        <button data-view="program" class="active"><span>◈</span> ახალი პროგრამა</button>
-        <button data-view="today"><span>◫</span> ძველი გეგმა · არქივი</button>
+        <button data-view="program" class="active"><span>◈</span> 6-მოდულიანი სასწავლო გზა</button>
+        <button data-view="archive-weekly"><span>◷</span> წინა 8-კვირიანი გეგმა</button>
+        <button data-view="today"><span>◫</span> ძველი დღიური კალენდარი</button>
         <button data-view="lab"><span>⚡</span> პრაქტიკული ლაბორატორია</button>
         <button data-view="overview"><span>◉</span> პროგრესი</button>
         <button data-view="courses"><span>▤</span> კურსების ბიბლიოთეკა</button>
-        <button data-view="roadmap"><span>↗</span> მომდევნო თვეები</button>
+        <button data-view="roadmap"><span>↗</span> ძველი მარშრუტი · არქივი</button>
         <button data-view="settings"><span>⚙</span> მონაცემები და პარამეტრები</button>
       </nav>
       <div class="side-bottom">
-        <div class="sidebar-note"><span class="note-icon">✦</span><strong>სწავლა → მოქმედება</strong><p>ყოველ მოდულს მოსდევს ერთი პრაქტიკული შედეგი.</p></div>
-        <small>14.11.2026 — 14.05.2027</small>
+        <div class="sidebar-note"><span class="note-icon">✦</span><strong>სწავლა → მოქმედება</strong><p>სისტემური ცოდნა · თავისუფალი ტემპი · სურვილისამებრ პრაქტიკა.</p></div>
+        <small>თავისუფალი სასწავლო გზა · ვადების გარეშე</small>
       </div>
     </aside>
     <div class="mobile-topbar"><span class="brand-mark small">L<span>·</span></span><strong>LEARNING OS</strong><span class="live-dot" title="პროგრესი ინახება ამ ბრაუზერში"></span></div>
@@ -39,7 +40,7 @@
         <div class="topbar-right"><button class="theme-btn" id="themeToggle" type="button" title="ფონის რეჟიმი">◐</button><span class="top-pill"><i></i> შენახვა ამ მოწყობილობაზე</span></div>
       </header>
       <div id="content" aria-live="polite"><div class="loading">იტვირთება სასწავლო გეგმა…</div></div>
-      <footer class="footer"><span>Learning OS / v2.0</span><span>ერთი მოდული · ერთი სავარჯიშო · ერთი წინსვლა</span></footer>
+      <footer class="footer"><span>Learning OS / v3.0</span><span>საფუძველი · პრაქტიკა · გაღრმავება</span></footer>
     </main>
   </div>
   <nav class="mobile-nav" aria-label="ნავიგაცია">
@@ -54,6 +55,7 @@
   <script src="./data.js"></script>
   <script src="./build-lab.js"></script>
   <script src="./active-program.js"></script>
+  <script src="./flexible-program.js"></script>
   <script defer src="./app.js"></script>
 </body>
 </html>

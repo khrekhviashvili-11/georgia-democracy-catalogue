@@ -19,7 +19,8 @@
       </a>
       <p class="side-kicker">სამუშაო სივრცე</p>
       <nav class="side-nav" aria-label="მთავარი ნავიგაცია">
-        <button data-view="today" class="active"><span>◫</span> დღიური გეგმა</button>
+        <button data-view="program" class="active"><span>◈</span> ახალი პროგრამა</button>
+        <button data-view="today"><span>◫</span> ძველი გეგმა · არქივი</button>
         <button data-view="lab"><span>⚡</span> პრაქტიკული ლაბორატორია</button>
         <button data-view="overview"><span>◉</span> პროგრესი</button>
         <button data-view="courses"><span>▤</span> კურსების ბიბლიოთეკა</button>
@@ -38,20 +39,21 @@
         <div class="topbar-right"><button class="theme-btn" id="themeToggle" type="button" title="ფონის რეჟიმი">◐</button><span class="top-pill"><i></i> შენახვა ამ მოწყობილობაზე</span></div>
       </header>
       <div id="content" aria-live="polite"><div class="loading">იტვირთება სასწავლო გეგმა…</div></div>
-      <footer class="footer"><span>Learning OS / v1.0</span><span>ერთი მოდული · ერთი სავარჯიშო · ერთი წინსვლა</span></footer>
+      <footer class="footer"><span>Learning OS / v2.0</span><span>ერთი მოდული · ერთი სავარჯიშო · ერთი წინსვლა</span></footer>
     </main>
   </div>
   <nav class="mobile-nav" aria-label="ნავიგაცია">
-    <button data-view="today" class="active"><span>◫</span><small>დღე</small></button>
+    <button data-view="program" class="active"><span>◈</span><small>პროგრამა</small></button>
     <button data-view="lab"><span>⚡</span><small>პრაქტიკა</small></button>
     <button data-view="overview"><span>◉</span><small>პროგრესი</small></button>
     <button data-view="courses"><span>▤</span><small>კურსები</small></button>
-    <button data-view="roadmap"><span>↗</span><small>გეგმა</small></button>
+    
     <button data-view="settings"><span>⚙</span><small>მონაცემები</small></button>
   </nav>
   <div id="toast" role="status" aria-live="polite"></div>
   <script src="./data.js"></script>
   <script src="./build-lab.js"></script>
+  <script src="./active-program.js"></script>
   <script defer src="./app.js"></script>
 </body>
 </html>

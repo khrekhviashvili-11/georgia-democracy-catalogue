@@ -5,3 +5,33 @@
 @media(max-width:780px){.app-shell{display:block;min-height:100vh}.sidebar{display:none}.mobile-topbar{height:59px;display:flex;align-items:center;gap:12px;padding:0 18px;background:#1d4439;color:#f4f4ed;position:sticky;top:0;z-index:8}.mobile-topbar strong{font-family:Georgia,serif;font-weight:500;letter-spacing:.17em;font-size:13px}.mobile-topbar .live-dot{margin-left:auto}.main{padding:0 17px}.topbar{height:40px;border-bottom:0;justify-content:flex-end}.topbar-left{display:none}.topbar-right{gap:8px}.top-pill{font-size:9px;padding:4px 8px}.theme-btn{height:28px;width:28px}.page-intro{margin:16px 0 18px;align-items:flex-start}.page-intro h1{font-size:31px;margin-top:4px}.page-intro .btn{padding:7px;font-size:11px}.grid-head{grid-template-columns:repeat(2,1fr);gap:10px}.hero{grid-column:1/-1;min-height:162px;padding:22px 20px}.hero h1{font-size:27px}.hero .ring{width:89px;height:89px}.metric-card{min-height:130px;padding:15px}.metric-value{font-size:28px}.tasks,.course-grid,.progress-cols,.settings-grid{grid-template-columns:1fr}.task-card{min-height:230px;padding:19px}.date-panel{margin-bottom:16px}.daystrip{order:2;width:100%;min-width:0;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.day-dot{min-width:0;padding:7px 1px}.day-dot strong{font-size:13px}.day-dot small{font-size:9px}.date-summary{margin-left:auto}.section-head h2{font-size:17px}.stat-cluster{grid-template-columns:repeat(3,1fr);gap:7px}.kpi{padding:14px 9px}.kpi strong{font-size:23px}.kpi span{font-size:10px}.footer{margin-bottom:95px}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;padding:6px 6px calc(6px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--panel);z-index:7;justify-content:space-around;box-shadow:0 -6px 30px #0001}.mobile-nav button{background:none;border:0;color:var(--muted);display:flex;flex-direction:column;gap:0;align-items:center;min-width:60px;padding:5px 3px;border-radius:9px}.mobile-nav button span{font-size:20px;font-family:Georgia,serif}.mobile-nav button small{font-size:9px}.mobile-nav button.active{color:var(--accent);background:var(--accent-pale)}#toast{bottom:89px;left:15px;right:15px;text-align:center}}
 @media(max-width:360px){.daystrip{gap:3px}.day-dot{padding:6px 0}.page-intro h1{font-size:27px}.top-pill{display:none}}
 .task-card.full-line{grid-column:1/-1}
+
+/* Learning OS v2 — project-first curriculum */
+.program-week-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 22px}
+.program-week{position:relative;text-align:left;border:1px solid var(--line);border-radius:15px;padding:14px;background:var(--panel);color:var(--ink);min-height:113px;display:flex;flex-direction:column;gap:2px}
+.program-week.selected{background:var(--accent-pale);border:2px solid var(--accent);padding:13px}
+.program-week small{color:var(--copper);font-size:10px;font-weight:700;letter-spacing:.08em}
+.program-week strong{font-size:12px;line-height:1.45;margin:3px 0}
+.program-week span{font-size:10px;color:var(--muted)}
+.program-week em{font-style:normal;font-size:11px;font-weight:750;color:var(--accent);margin-top:auto}
+.program-mission{border-left:4px solid var(--copper);margin-bottom:24px}
+.program-mission h2{font-size:23px;margin:9px 0}
+.program-mission p{font-size:13px;margin:10px 0}
+.program-mission .line{margin-top:20px}
+.program-tasks{display:grid;grid-template-columns:1fr;gap:13px}
+.program-task{padding:21px 23px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.program-task.finished{border-color:#95b9a0;background:var(--accent-pale)}
+.program-task-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.program-task h3{margin:11px 0 7px;font-size:16px;line-height:1.45}
+.program-course{color:var(--muted);margin:0 0 16px;font-size:11px}
+.program-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.program-actions>div{border:1px solid var(--line);background:var(--bg);border-radius:11px;padding:14px}
+.program-action-label{color:var(--accent);font-size:11px;font-weight:750;letter-spacing:.02em}
+.program-actions p{margin:7px 0 0;font-size:12px;line-height:1.65}
+.program-footer{border-top:1px solid var(--line);margin-top:17px;padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.program-checks{display:flex;gap:17px;flex-wrap:wrap}
+.program-footer>a{font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap}
+.active-courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.active-courses .course-card{min-height:180px}
+@media(max-width:1050px){.program-week-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){.program-week-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.program-week{padding:12px;min-height:100px}.program-actions,.active-courses{grid-template-columns:1fr}.program-task{padding:16px}.program-footer{align-items:flex-start;flex-wrap:wrap}.program-week strong{font-size:11px}.program-mission h2{font-size:20px}}

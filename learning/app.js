@@ -3,10 +3,15 @@
 var DATA=window.PLAN_DATA||{daily:[],weekly:[],courses:[]};
 var KEY="learning-os-state-v1",THEME="learning-os-theme-v1";
 var FIRST="2026-11-14",LAST="2027-05-14",LAST_DAILY="2027-01-13";
-var state={done:{},notes:{}},view="today",selected=tbilisiToday(),search="";
+var state={done:{},notes:{}},view="program",selected=tbilisiToday(),search="",programWeekIndex=0;
 var root=document.getElementById("content"),toastEl=document.getElementById("toast");
 try{var stored=JSON.parse(localStorage.getItem(KEY)||"null");if(stored&&typeof stored==="object"){state.done=stored.done||{};state.notes=stored.notes||{}}}catch(e){}
 if(selected<FIRST)selected=FIRST;if(selected>LAST)selected=LAST;
+if(window.ACTIVE_PROGRAM&&window.ACTIVE_PROGRAM.weeks){
+ var todayForWeek=tbilisiToday();
+ var wkMatch=window.ACTIVE_PROGRAM.weeks.findIndex(function(w){return w.start<=todayForWeek&&todayForWeek<=w.end});
+ programWeekIndex=wkMatch>=0?wkMatch:(todayForWeek>window.ACTIVE_PROGRAM.end?window.ACTIVE_PROGRAM.weeks.length-1:0);
+}
 try{if(localStorage.getItem(THEME)==="dark")document.documentElement.dataset.theme="dark"}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){showToast("მონაცემის შენახვა ვერ მოხერხდა. სცადე ექსპორტი.")}}
 function escapeHtml(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
@@ -128,7 +133,7 @@ function renderCourseList(){
  return '<article class="course-card"><span class="course-provider">'+tb(c.provider)+'</span><h3>'+tb(c.title)+'</h3><div class="course-meta"><span>'+tb(c.modules)+' მოდული</span><span>·</span><span>'+tb(c.duration)+'</span><span>·</span><span>'+tb(c.stage)+'</span></div><a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(cleanUrl(c.url))+'">კურსის გახსნა ↗</a></article>';
  }).join("")+(list.length?"":'<p class="empty">ასეთი კურსი ვერ მოიძებნა.</p>')+"</div>";
 }
-function renderCourses(){return '<div class="page-intro"><div><span class="eyebrow">COURSE LIBRARY</span><h1>კურსების ბიბლიოთეკა</h1><p class="sub">ყველა Coursera პროგრამა ერთ სივრცეში, პირდაპირი ბმულებით.</p></div></div><input class="search" id="courseSearch" type="search" placeholder="მოძებნე კურსი ან უნივერსიტეტი..." value="'+tb(search)+'"><div id="courseList">'+renderCourseList()+'</div>'}
+function renderCourses(){return '<div class="page-intro"><div><span class="eyebrow">COURSE LIBRARY</span><h1>კურსების ბიბლიოთეკა</h1><p class="sub">მოქმედი Udemy პროგრამა და წინა Coursera გეგმის არქივი.</p></div></div>'+renderActiveCourses()+'<div class="section-head"><h2>წინა გეგმის კურსები · არქივი</h2></div><input class="search" id="courseSearch" type="search" placeholder="მოძებნე კურსი ან უნივერსიტეტი..." value="'+tb(search)+'"><div id="courseList">'+renderCourseList()+'</div>'}
 function renderRoadmap(){
  var groups=[{label:"INTENSIVE PHASE",name:"პირველი ორი თვე",range:"14.11.2026 — 13.01.2027",desc:"ყოველდღიური სწავლა: Claude, GitHub, Google AI, ChatGPT, მონაცემები და Python",time:"94 სთ"},{label:"SPECIALIZATION PHASE",name:"შემდეგი ოთხი თვე",range:"14.01.2027 — 14.05.2027",desc:"AI აგენტები, RAG, სამართლებრივი კვლევა, უსაფრთხოება და OS-ების პირველი სპეციფიკაციები",time:"5–7 სთ/კვ."}];
  return '<div class="page-intro"><div><span class="eyebrow">6 MONTH ROADMAP</span><h1>განვითარების მარშრუტი</h1><p class="sub">პირველი ორი თვე ინტენსიური, მომდევნო ოთხი — ეტაპობრივი.</p></div></div>'+
@@ -156,6 +161,54 @@ function renderLab(){
  '<div class="section-head"><h2>რა ფუნქცია აქვს თითოეულ ინსტრუმენტს?</h2></div><div class="course-grid">'+tools+'</div>'+
  '<div class="section-head"><h2>ეტაპობრივი გაკვეთილი</h2><small>თითოეული ნაბიჯი ცალკე მონიშნე</small></div><div class="weekly-grid">'+steps+'</div>';
 }
+
+function ap(){return window.ACTIVE_PROGRAM||{courses:[],weeks:[]}}
+function apPercent(week){
+ var done=0,tot=0;
+ week.tasks.forEach(function(t){tot+=2;done+=Number(complete("p",t.id,"learn"))+Number(complete("p",t.id,"practice"))});
+ return {done:done,total:tot,percent:pct(done,tot)};
+}
+function apTotal(){
+ var done=0,tot=0;
+ ap().weeks.forEach(function(w){var x=apPercent(w);done+=x.done;tot+=x.total});
+ return {done:done,total:tot,percent:pct(done,tot)};
+}
+function apCourse(id){return ap().courses.find(function(c){return c.id===id})}
+function renderActiveCourses(){
+ return '<div class="active-courses">'+ap().courses.map(function(c){
+  var kind=c.role==="primary"?"მთავარი კურსი":c.role==="reference"?"დამატებითი": "ახლად შერჩეული";
+  var access=c.enrolled?"ჩარიცხული":"Personal Plan გადაამოწმე";
+  return '<div class="course-card"><span class="course-provider">'+tb(c.track)+'</span><h3>'+tb(c.name)+'</h3><div class="course-meta"><span>'+tb(kind)+'</span><span>·</span><span>'+tb(access)+'</span></div><p class="muted" style="font-size:12px">'+tb(c.note)+'</p><a target="_blank" rel="noopener noreferrer" href="'+tb(c.url)+'">Udemy-ზე გახსნა ↗</a></div>';
+ }).join("")+'</div>';
+}
+function renderProgram(){
+ var data=ap(),weeks=data.weeks,total=apTotal(),w=weeks[programWeekIndex]||weeks[0];
+ if(!w)return '<div class="panel">პროგრამის ფაილი ვერ ჩაიტვირთა. განაახლე გვერდი.</div>';
+ var current=apPercent(w);
+ var weekButtons=weeks.map(function(v,i){
+  var q=apPercent(v);
+  return '<button type="button" class="program-week '+(i===programWeekIndex?"selected":"")+'" data-program-week="'+i+'"><small>კვირა '+(i+1)+'</small><strong>'+tb(v.name)+'</strong><span>'+tb(dateKa(v.start,{day:"numeric",month:"short"}))+' – '+tb(dateKa(v.end,{day:"numeric",month:"short"}))+'</span><em>'+q.percent+'%</em></button>';
+ }).join("");
+ var tasks=w.tasks.map(function(t,i){
+  var c=apCourse(t.course),code=c?c.id:"practice",linkUrl=c?c.url:"https://khrekhviashvili-11.github.io/georgia-democracy-catalogue/research-lab/";
+  var done=complete("p",t.id,"learn")&&complete("p",t.id,"practice");
+  return '<article class="program-task '+(done?"finished":"")+'"><div class="program-task-top"><span class="eyebrow">'+tb(dateKa(t.date,{day:"numeric",month:"long"}))+' · '+(i+1)+'</span><span class="badge">'+(t.minutes||0)+' წთ</span></div>'+
+  '<h3>'+tb(t.module)+'</h3><p class="program-course"><strong>'+tb(c?c.track:"პროექტის პრაქტიკა")+'</strong> · '+tb(c?c.name:"Research OS")+'</p>'+
+  '<div class="program-actions"><div><span class="program-action-label">რისი გაკეთება უნდა შეძლო</span><p>'+tb(t.practice)+'</p></div><div><span class="program-action-label">როგორ შეამოწმებ</span><p>'+tb(t.test)+'</p></div></div>'+
+  '<div class="program-footer"><div class="program-checks">'+iconCheck("p",t.id,"learn",c?"მოდული გავიარე":"ინსტრუქცია გავიარე")+iconCheck("p",t.id,"practice","პრაქტიკა შევასრულე")+'</div><a href="'+tb(linkUrl)+'" target="_blank" rel="noopener noreferrer">გახსნა ↗</a></div></article>';
+ }).join("");
+ return '<div class="page-intro"><div><span class="eyebrow">ACTIVE CURRICULUM · RESEARCH OS</span><h1>ჩემი ახალი პროგრამა</h1><p class="sub">18 ნოემბერი, 2026 — 12 იანვარი, 2027 · 8 კვირა · რეალური პროექტები</p></div><button class="btn" data-view="today">ძველი გეგმა ↗</button></div>'+
+ '<div class="grid-head">'+hero("PROJECT-FIRST LEARNING","Research OS",data.guiding,total.percent)+
+ '<div class="metric-card"><span class="metric-label">მთლიანი შესრულება</span><div class="metric-value">'+total.percent+'%</div>'+progressLine(total.percent)+'<span class="metric-foot">'+total.done+' / '+total.total+' მონიშვნა</span></div>'+
+ '<div class="metric-card"><span class="metric-label">ამ კვირის შესრულება</span><div class="metric-value">'+current.percent+'%</div>'+progressLine(current.percent)+'<span class="metric-foot">'+current.done+' / '+current.total+' მონიშვნა</span></div></div>'+
+ '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება შვიდივე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. ხუთი კურსი უკვე არჩეულია; ChatGPT და NotebookLM ახლად რეკომენდებულია.</p></div>'+
+ '<div class="section-head"><h2>აირჩიე კვირა</h2><small>შესრულების % დამოუკიდებელია</small></div><div class="program-week-grid">'+weekButtons+'</div>'+
+ '<div class="panel program-mission"><span class="eyebrow">WEEK '+(programWeekIndex+1)+' · '+tb(w.start)+' — '+tb(w.end)+'</span><h2>'+tb(w.name)+'</h2><p><strong>რას გაიგებ:</strong> '+tb(w.goal)+'</p><p><strong>კვირის ხელშესახები შედეგი:</strong> '+tb(w.deliverable)+'</p>'+progressLine(current.percent)+'</div>'+
+ '<div class="section-head"><h2>სასწავლო მოდულები და პრაქტიკული ტესტები</h2><small>'+w.tasks.length+' დავალება</small></div><div class="program-tasks">'+tasks+'</div>'+
+ '<div class="panel notes-panel"><h3>✎ ამ კვირის სამუშაო ჩანაწერი</h3><textarea data-notes="program:'+w.id+'" placeholder="რა გავიგე? რა შეცდომა მივიღე? როგორ გამოვასწორე?">'+tb(state.notes["program:"+w.id]||"")+'</textarea><p class="hint">მხოლოდ ამ მოწყობილობაზე ინახება. სარეზერვო ასლი: „მონაცემები“ → ექსპორტი.</p></div>'+
+ '<div class="section-head"><h2>შერჩეული შვიდი კურსი</h2></div>'+renderActiveCourses();
+}
+
 function renderSettings(){
  return '<div class="page-intro"><div><span class="eyebrow">YOUR DATA</span><h1>მონაცემები და შენახვა</h1><p class="sub">შენი წინსვლა ეკუთვნის შენ, არა GitHub-ის საჯარო გვერდს.</p></div></div><div class="settings-grid">'+
  '<section class="settings-section"><span class="eyebrow">BACKUP</span><h3>სარეზერვო ასლის ჩამოტვირთვა</h3><p>გადმოიწერე მონიშნული მოდულები, პრაქტიკული დავალებები და ჩანაწერები JSON ფაილად. შეგიძლია სხვა მოწყობილობაშიც აღადგინო.</p><div class="actions"><button class="btn primary" id="exportProgress">↓ ექსპორტი (JSON)</button></div></section>'+
@@ -164,12 +217,13 @@ function renderSettings(){
  '<section class="settings-section"><span class="eyebrow">RESET</span><h3>პროგრესის გასუფთავება</h3><p>ეს მოქმედება გააუქმებს ყველა მონიშვნასა და ჩანაწერს მხოლოდ ამ მოწყობილობაზე. სასწავლო გეგმა არ შეიცვლება.</p><div class="actions"><button class="btn danger" id="clearProgress">ყველა ნიშნის წაშლა</button></div></section></div>';
 }
 function updateNav(){document.querySelectorAll("[data-view]").forEach(function(el){el.classList.toggle("active",el.dataset.view===view)})}
-function render(){if(view==="today")root.innerHTML=renderToday();else if(view==="overview")root.innerHTML=renderOverview();else if(view==="courses")root.innerHTML=renderCourses();else if(view==="roadmap")root.innerHTML=renderRoadmap();else if(view==="lab")root.innerHTML=renderLab();else root.innerHTML=renderSettings();updateNav()}
+function render(){if(view==="program")root.innerHTML=renderProgram();else if(view==="today")root.innerHTML=renderToday();else if(view==="overview")root.innerHTML=renderOverview();else if(view==="courses")root.innerHTML=renderCourses();else if(view==="roadmap")root.innerHTML=renderRoadmap();else if(view==="lab")root.innerHTML=renderLab();else root.innerHTML=renderSettings();updateNav()}
 function go(v){view=v;render();window.scrollTo(0,0)}
 function jumpDate(dt){selected=clampDate(dt);view="today";render();window.scrollTo(0,0)}
 var toastTimer;
 function showToast(s){toastEl.textContent=s;toastEl.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){toastEl.classList.remove("show")},2600)}
 document.addEventListener("click",function(e){
+ var wk=e.target.closest("[data-program-week]");if(wk){programWeekIndex=Number(wk.dataset.programWeek);render();return}
  var b=e.target.closest("[data-view]");if(b){go(b.dataset.view);return}
  var shift=e.target.closest("[data-shift]");if(shift){jumpDate(moveDate(selected,Number(shift.dataset.shift)));return}
  var day=e.target.closest("[data-date]");if(day){jumpDate(day.dataset.date);return}

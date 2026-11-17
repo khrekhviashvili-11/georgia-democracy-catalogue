@@ -1,38 +1,54 @@
-# Learning OS — v2 Project-First Training Program
+# Learning OS v3 — Structured, self-paced technology learning
 
-Published at: https://khrekhviashvili-11.github.io/georgia-democracy-catalogue/learning/
+Live URL: https://khrekhviashvili-11.github.io/georgia-democracy-catalogue/learning/
 
-## Active program
+## Why this version
 
-- **18 November 2026 – 12 January 2027**
-- 8 weekly modules, 44 individual study/practice tasks, ~57 hours in total
-- Project: **Research OS / Georgia Democracy Catalogue**
-- Each task has a course link, identified section/lesson, practical activity, success check and two separate completion checkboxes
-- Weekly and overall program progress, weekly notes, mobile-friendly layout
+The learner already has advanced experience defining research and human-rights tasks and working with AI conversationally, but starts at a beginner level with GitHub, web architecture, APIs, automation, document processing, Claude Code, and NotebookLM.
 
-Core enrolled Udemy courses:
-1. Claude Code – The Ultimate Guide! Build Websites & SaaS Apps
-2. Complete Claude Code Course: Beginner to Advanced
-3. GitHub Actions – The Complete Guide
-4. GitHub Actions: The Complete Guide from Beginner to Expert
-5. AI Automation: Build LLM Apps & AI-Agents with n8n & APIs
+This is **not** a programmer bootcamp or an obligatory course-completion schedule. It gives an understandable map of technological possibilities, builds foundational mental models, and uses real, low-risk Research OS examples.
 
-Selected additional courses (not claimed enrolled):
-6. Mastering ChatGPT Work and GPT-6 Astra [2026]
-7. Gemini Notebook: The Ultimate in AI NoteTaking (2026)
+## Primary learning path
 
-The active program is maintained in `active-program.js`. The two Claude Code and two GitHub Actions courses overlap; one is treated as a primary learning path and the second as targeted technical reference.
+Six modules in a logical progression, accessible in any order:
 
-## Previous plan and progress
+1. **Technology foundations:** website vs web app, frontend/backend/database/hosting, HTML/CSS/JS/JSON/PDF, inputs/outputs, basic requests.
+2. **GitHub and projects:** repository, commit, branch, GitHub Pages, GitHub Actions, public-repository risks.
+3. **AI document research:** direct PDF vs landing page, NotebookLM, ChatGPT, source verification, PDF extraction/OCR.
+4. **AI-assisted software development:** Claude Chat vs Claude Code, permissions, reading a project, small changes, debugging/testing.
+5. **APIs and automation:** HTTP/API, triggers, workflow state, n8n, GitHub Actions, safety.
+6. **Advanced AI systems (optional deepening):** semantic search, RAG, agents, architecture choices, human review.
 
-The first Coursera-based calendar remains intact in `data.js` and available via **ძველი გეგმა · არქივი**. The previous practical Research OS lab also remains available. **Existing checkbox and notes keys remain unchanged**.
+The modules, lessons, example tasks, and selected resources are maintained in `flexible-program.js`. The active view also includes a **Capabilities Library** for ideas such as webpage monitoring, searchable documents, source-backed briefs, and integrating apps.
 
-All checkmarks and notes (new and old) are persisted in the same browser `localStorage` entry, `learning-os-state-v1`. This is **not cloud sync**. Users can transfer or back up all progress using **მონაცემები → JSON ექსპორტი**.
+Every lesson has three separately tracked activities:
+- **საფუძველი (foundation):** Have read/understood the concept.
+- **არჩევითი პრაქტიკა (optional practice):** Tried the example.
+- **სურვილისამებრ გაღრმავება (optional deepening):** Explored advanced material.
+
+Only the foundation count is summarized by module. There is **no mandatory assessment, deadline, certification, or forced transition**. The practical and deepening counts are separate and do not penalize progression.
+
+## Seven enrolled Udemy courses
+
+- Claude Code – The Ultimate Guide! Build Websites & SaaS Apps
+- Complete Claude Code Course: Beginner to Advanced
+- GitHub Actions – The Complete Guide
+- GitHub Actions: The Complete Guide from Beginner to Expert
+- AI Automation: Build LLM Apps & AI-Agents with n8n & APIs
+- Mastering ChatGPT Work and GPT-6 Astra [2026]
+- Gemini Notebook: The Ultimate in AI NoteTaking (2026)
+
+Course links are to the exact purchased/enrolled Udemy course pages. Lesson/section descriptions within the app are **topical navigation hints**, not verified deep links to specific paid videos, and may differ as Udemy course sections are updated.
+
+## Preserving earlier work
+
+- **v2 eight-week project-first plan:** `active-program.js`, still available from the application's archival view.
+- **Original daily/monthly course calendar:** `data.js`, still available in the archival daily and roadmap views.
+- **Original hands-on Research OS tutorial:** `build-lab.js`, still available in Practical Lab.
+- Previously saved progress is untouched: v1/v2 keys (`d:`, `w:`, `p:`, `lab:`) remain.
+- v3 keys use `f:<topic-id>:(learn|practice|depth)` and text notes `flex:<module-id>`.
+- All versions continue to use the existing localStorage key `learning-os-state-v1`. Progress is **browser-local** and isn't synced between devices. Users can use the existing JSON backup/export/import in the Settings view.
 
 ## Privacy
 
-This repository is public. The curriculum is public; do not place client confidential information, case files, private identities or API secrets in repository files, examples, or prompts for external services. Local progress remains in the user's browser unless they export it.
-
-## Course access
-
-Udemy course inclusion in Personal Plan depends on region and user account. The two newly selected courses are recommendations, not automatic enrollments. ChatGPT Work and other product features may vary by account, plan, or updated interface.
+The Pages repository and public training examples are publicly accessible. Do not commit client cases, personal identifiers, confidential reports, API keys, credentials, or private files. Complete experiments using public or synthetic data, and review the data policies of any external AI tool before uploading content.

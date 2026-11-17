@@ -3,9 +3,10 @@
 var DATA=window.PLAN_DATA||{daily:[],weekly:[],courses:[]};
 var KEY="learning-os-state-v1",THEME="learning-os-theme-v1";
 var FIRST="2026-11-14",LAST="2027-05-14",LAST_DAILY="2027-01-13";
-var state={done:{},notes:{}},view="program",selected=tbilisiToday(),search="",programWeekIndex=0;
+var state={done:{},notes:{}},view="program",selected=tbilisiToday(),search="",programWeekIndex=0,flexTab="modules",flexModule="foundation";
 var root=document.getElementById("content"),toastEl=document.getElementById("toast");
 try{var stored=JSON.parse(localStorage.getItem(KEY)||"null");if(stored&&typeof stored==="object"){state.done=stored.done||{};state.notes=stored.notes||{}}}catch(e){}
+if(state.notes&&typeof state.notes["flex:lastModule"]==="string")flexModule=state.notes["flex:lastModule"];
 if(selected<FIRST)selected=FIRST;if(selected>LAST)selected=LAST;
 if(window.ACTIVE_PROGRAM&&window.ACTIVE_PROGRAM.weeks){
  var todayForWeek=tbilisiToday();
@@ -201,12 +202,108 @@ function renderProgram(){
  '<div class="grid-head">'+hero("PROJECT-FIRST LEARNING","Research OS",data.guiding,total.percent)+
  '<div class="metric-card"><span class="metric-label">მთლიანი შესრულება</span><div class="metric-value">'+total.percent+'%</div>'+progressLine(total.percent)+'<span class="metric-foot">'+total.done+' / '+total.total+' მონიშვნა</span></div>'+
  '<div class="metric-card"><span class="metric-label">ამ კვირის შესრულება</span><div class="metric-value">'+current.percent+'%</div>'+progressLine(current.percent)+'<span class="metric-foot">'+current.done+' / '+current.total+' მონიშვნა</span></div></div>'+
- '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება შვიდივე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. ხუთი კურსი უკვე არჩეულია; ChatGPT და NotebookLM ახლად რეკომენდებულია.</p></div>'+
+ '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება შვიდივე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. შვიდივე კურსში უკვე ჩარიცხული ხარ.</p></div>'+
  '<div class="section-head"><h2>აირჩიე კვირა</h2><small>შესრულების % დამოუკიდებელია</small></div><div class="program-week-grid">'+weekButtons+'</div>'+
  '<div class="panel program-mission"><span class="eyebrow">WEEK '+(programWeekIndex+1)+' · '+tb(w.start)+' — '+tb(w.end)+'</span><h2>'+tb(w.name)+'</h2><p><strong>რას გაიგებ:</strong> '+tb(w.goal)+'</p><p><strong>კვირის ხელშესახები შედეგი:</strong> '+tb(w.deliverable)+'</p>'+progressLine(current.percent)+'</div>'+
  '<div class="section-head"><h2>სასწავლო მოდულები და პრაქტიკული ტესტები</h2><small>'+w.tasks.length+' დავალება</small></div><div class="program-tasks">'+tasks+'</div>'+
  '<div class="panel notes-panel"><h3>✎ ამ კვირის სამუშაო ჩანაწერი</h3><textarea data-notes="program:'+w.id+'" placeholder="რა გავიგე? რა შეცდომა მივიღე? როგორ გამოვასწორე?">'+tb(state.notes["program:"+w.id]||"")+'</textarea><p class="hint">მხოლოდ ამ მოწყობილობაზე ინახება. სარეზერვო ასლი: „მონაცემები“ → ექსპორტი.</p></div>'+
  '<div class="section-head"><h2>შერჩეული შვიდი კურსი</h2></div>'+renderActiveCourses();
+}
+
+
+/* Learning OS v3 · flexible systematic curriculum. Earlier calendars remain archival. */
+function flexData(){return window.FLEX_PROGRAM||{modules:[],capabilities:[],intro:""}}
+function flexModuleById(id){return flexData().modules.find(function(m){return m.id===id})}
+function flexScore(module){
+ var learned=0,practiced=0,deepened=0;
+ module.topics.forEach(function(t){
+  if(complete("f",t.id,"learn"))learned++;
+  if(complete("f",t.id,"practice"))practiced++;
+  if(complete("f",t.id,"depth"))deepened++;
+ });
+ return {learned:learned,total:module.topics.length,practiced:practiced,deepened:deepened,
+  pct:pct(learned,module.topics.length)};
+}
+function flexTotal(){
+ var learned=0,total=0,practiced=0,deepened=0;
+ flexData().modules.forEach(function(m){var x=flexScore(m);learned+=x.learned;total+=x.total;practiced+=x.practiced;deepened+=x.deepened});
+ return {learned:learned,total:total,practiced:practiced,deepened:deepened,pct:pct(learned,total)};
+}
+function flexCourseLinks(topic){
+ var data=ap(),links=[],seen={};
+ (topic.resourceIds||[]).forEach(function(id){
+  var c=data.courses.find(function(v){return v.id===id});
+  if(!c||seen[id])return;
+  seen[id]=true;
+  links.push('<a href="'+tb(c.url)+'" target="_blank" rel="noopener noreferrer" class="flex-course-link">'+tb(c.name)+' ↗</a>');
+ });
+ return links.join("");
+}
+function renderFlexModules(){
+ var data=flexData();
+ if(!data.modules.length)return '<div class="panel"><h2>სასწავლო გეგმა ვერ ჩაიტვირთა</h2><p>განაახლე ვებგვერდი.</p></div>';
+ var selectedModule=flexModuleById(flexModule)||data.modules[0];
+ var selection=data.modules.map(function(m){
+  var st=flexScore(m);
+  return '<button type="button" class="flex-module-button '+(selectedModule.id===m.id?"selected":"")+'" data-flex-module="'+tb(m.id)+'">'+
+    '<span class="flex-module-num">'+tb(m.number)+'</span><span class="flex-module-info"><strong>'+tb(m.title)+'</strong><small>'+tb(m.short)+'</small></span>'+
+    '<span class="flex-module-counter">'+st.learned+' / '+st.total+'</span></button>';
+ }).join("");
+ var count=flexScore(selectedModule);
+ var topics=selectedModule.topics.map(function(topic,index){
+  var learned=complete("f",topic.id,"learn"),practiced=complete("f",topic.id,"practice"),depth=complete("f",topic.id,"depth");
+  return '<article class="flex-lesson '+(learned?"read":"")+'"><div class="flex-lesson-top">'+
+  '<span class="eyebrow">THEME '+String(index+1).padStart(2,"0")+'</span><span class="flex-lesson-status">'+(learned?"გაცნობილი მაქვს":"როცა მოგინდება")+'</span></div>'+
+  '<h3>'+tb(topic.title)+'</h3><p class="flex-concept">'+tb(topic.concept)+'</p>'+
+  '<div class="flex-why"><span class="program-action-label">რატომ არის მნიშვნელოვანი?</span><p>'+tb(topic.why)+'</p></div>'+
+  '<div class="flex-resource"><span class="program-action-label">სასწავლო რესურსი</span><p>'+tb(topic.study)+'</p><div class="flex-resource-links">'+flexCourseLinks(topic)+'</div></div>'+
+  '<div class="flex-checks"><div class="flex-check-line"><div><strong>საფუძველი</strong><p>გავეცანი თემას და მესმის ძირითადი იდეა.</p></div>'+
+  iconCheck("f",topic.id,"learn","გავეცანი")+'</div>'+
+  '<div class="flex-check-line"><div><strong>არჩევითი პრაქტიკა</strong><p>'+tb(topic.tryIt)+'</p></div>'+iconCheck("f",topic.id,"practice","გამოვცადე")+'</div>'+
+  '<div class="flex-check-line"><div><strong>სურვილისამებრ გაღრმავება</strong><p>'+tb(topic.deepen)+'</p></div>'+iconCheck("f",topic.id,"depth","გავეცანი ღრმად")+'</div></div></article>';
+ }).join("");
+ var moduleCourses=(selectedModule.courseIds||[]).map(function(id){
+  var course=apCourse(id);return course?link(course.name,course.url):"";
+ }).filter(Boolean).join("");
+ return '<div class="flex-intro"><span class="eyebrow">FLEXIBLE LEARNING PATH</span><h1>ტექნოლოგიების სისტემური შესწავლა</h1><p>'+tb(data.intro)+'</p></div>'+
+  '<div class="flex-steps-summary"><div><strong>6</strong><small>ლოგიკური მოდული</small></div><div><strong>'+data.modules.reduce(function(n,m){return n+m.topics.length},0)+'</strong><small>მოკლე თემა</small></div><div><strong>7</strong><small>შერჩეული კურსი</small></div></div>'+
+  '<div class="panel flex-guide"><strong>როგორ გამოიყენო</strong><p>'+tb(data.howToUse)+'</p><p class="muted">პროგრესის ნიშანი ნიშნავს მხოლოდ იმას, რომ თემას გაეცანი. არჩევითი პრაქტიკა და გაღრმავება საერთო პროცენტს არ ამცირებს.</p></div>'+
+  '<div class="flex-heading"><h2>აირჩიე მოდული</h2><small>სურვილისამებრ ნებისმიერი თემიდან დაიწყე</small></div>'+
+  '<div class="flex-module-grid">'+selection+'</div>'+
+  '<section class="flex-module-detail"><div class="flex-module-heading"><span class="eyebrow">MODULE '+tb(selectedModule.number)+'</span><h2>'+tb(selectedModule.title)+'</h2><p>'+tb(selectedModule.description)+'</p>'+
+  '<div class="flex-module-progress"><strong>'+count.learned+' / '+count.total+' თემა გაცნობილი</strong><span>'+count.pct+'%</span></div>'+progressLine(count.pct)+
+  '<p class="muted"><strong>მიზანი:</strong> '+tb(selectedModule.outcome)+'</p><div class="links">'+moduleCourses+'</div></div>'+
+  '<div class="flex-lesson-grid">'+topics+'</div></section>'+
+  '<div class="panel notes-panel"><h3>ჩემი ჩანაწერები · '+tb(selectedModule.title)+'</h3><textarea data-notes="flex:'+tb(selectedModule.id)+'" placeholder="რა შესაძლებლობა აღმოვაჩინე? სად შემიძლია გამოვიყენო?">'+tb(state.notes["flex:"+selectedModule.id]||"")+'</textarea><p class="hint">შენახვა ამ ბრაუზერში ხდება. პერსონალური ან კონფიდენციალური შემთხვევების დეტალები არ ჩაწერო.</p></div>';
+}
+function renderFlexCapabilities(){
+ var data=flexData();
+ var caps=data.capabilities.map(function(c){
+  var m=flexModuleById(c.module);
+  return '<article class="flex-capability"><div class="eyebrow">CAPABILITY</div><h3>'+tb(c.name)+'</h3><p>'+tb(c.summary)+'</p><div class="flex-capability-meta"><strong>შესაძლო ინსტრუმენტები</strong><span>'+tb(c.tech)+'</span></div>'+
+   '<div class="flex-capability-meta"><strong>სად გამოგადგება?</strong><span>'+tb(c.example)+'</span></div>'+
+   '<button type="button" class="btn small" data-flex-module="'+tb(c.module)+'">გაიგე მეტი · '+tb(m?m.number:"")+' ↗</button></article>';
+ }).join("");
+ return '<div class="flex-intro"><span class="eyebrow">CAPABILITY LIBRARY</span><h1>რა შეიძლება შევქმნა?</h1><p>იდეის გაჩენისას ამ ბიბლიოთეკაში მოძებნე შესაბამისი ტექნიკური შესაძლებლობა და გაიგე, რა გზებით შეიძლება მისი განხორციელება.</p></div>'+
+ '<div class="flex-capabilities">'+caps+'</div>';
+}
+function renderFlexible(){
+ var t=flexTotal();
+ return '<div class="page-intro"><div><span class="eyebrow">LEARNING OS · VERSION 3</span><h1>ჩემი სასწავლო სივრცე</h1><p class="sub">ცოდნა თანმიმდევრულად, ტემპი თავისუფლად. არანაირი სავალდებულო ტესტი ან ვადა.</p></div></div>'+
+ '<div class="flex-topline"><div><span class="eyebrow">გაცნობილი თემები</span><strong>'+t.learned+' / '+t.total+'</strong><small>შეფასება არ არის · შეგიძლია ნებისმიერ დროს გაჩერდე</small></div>'+
+ '<div><span class="eyebrow">არჩევითი პრაქტიკა</span><strong>'+t.practiced+'</strong><small>შენ თვითონ წყვეტ, რომელი გამოსცადო</small></div><div><span class="eyebrow">გაღრმავება</span><strong>'+t.deepened+'</strong><small>საჭიროების მიხედვით</small></div></div>'+
+ '<div class="flex-tabs"><button type="button" data-flex-tab="modules" class="'+(flexTab==="modules"?"active":"")+'">სასწავლო მოდულები</button><button type="button" data-flex-tab="capabilities" class="'+(flexTab==="capabilities"?"active":"")+'">შესაძლებლობების ბიბლიოთეკა</button></div>'+
+ (flexTab==="capabilities"?renderFlexCapabilities():renderFlexModules())+
+ '<div class="flex-bottom-links"><button class="btn" type="button" data-view="courses">ჩემი 7 Udemy კურსი ↗</button>'+
+ '<button class="btn" type="button" data-view="archive-weekly">წინა 8-კვირიანი გეგმა ↗</button>'+
+ '<button class="btn" type="button" data-view="today">პირველი დღიური გეგმა ↗</button></div>';
+}
+function renderFlexibleOverview(){
+ var data=flexData(),t=flexTotal();
+ return '<div class="page-intro"><div><span class="eyebrow">SELF-PACED LEARNING</span><h1>გაცნობილი შესაძლებლობები</h1><p class="sub">ეს არის შენი გზის ჩანაწერი და არა შესრულების ვალდებულება.</p></div></div>'+
+ '<div class="flex-topline"><div><span class="eyebrow">საფუძვლები</span><strong>'+t.learned+' / '+t.total+'</strong><small>გაცნობილი თემები</small></div><div><span class="eyebrow">არჩევითი პრაქტიკა</span><strong>'+t.practiced+'</strong><small>გამოცდილი მაგალითები</small></div><div><span class="eyebrow">გაღრმავება</span><strong>'+t.deepened+'</strong><small>დამატებით ნასწავლი</small></div></div>'+
+ '<div class="flex-module-grid">'+data.modules.map(function(m){var q=flexScore(m);return '<button class="flex-module-button" data-flex-module="'+tb(m.id)+'"><span class="flex-module-num">'+tb(m.number)+'</span><span class="flex-module-info"><strong>'+tb(m.title)+'</strong><small>'+tb(m.short)+'</small></span><span class="flex-module-counter">'+q.learned+' / '+q.total+'</span></button>'}).join("")+'</div>'+
+ '<div class="panel"><h3>ძველი პროგრამების შენახული პროგრესი</h3><p>წინა რვაკვირიანი და Coursera-ს გეგმები არ წაშლილა. მათი მონიშვნები და ჩანაწერები ამავე ბრაუზერშია შენახული.</p><div class="links"><button class="btn small" data-view="archive-weekly">8-კვირიანი გეგმა</button><button class="btn small" data-view="today">ძველი დღიური გეგმა</button></div></div>';
 }
 
 function renderSettings(){
@@ -217,12 +314,16 @@ function renderSettings(){
  '<section class="settings-section"><span class="eyebrow">RESET</span><h3>პროგრესის გასუფთავება</h3><p>ეს მოქმედება გააუქმებს ყველა მონიშვნასა და ჩანაწერს მხოლოდ ამ მოწყობილობაზე. სასწავლო გეგმა არ შეიცვლება.</p><div class="actions"><button class="btn danger" id="clearProgress">ყველა ნიშნის წაშლა</button></div></section></div>';
 }
 function updateNav(){document.querySelectorAll("[data-view]").forEach(function(el){el.classList.toggle("active",el.dataset.view===view)})}
-function render(){if(view==="program")root.innerHTML=renderProgram();else if(view==="today")root.innerHTML=renderToday();else if(view==="overview")root.innerHTML=renderOverview();else if(view==="courses")root.innerHTML=renderCourses();else if(view==="roadmap")root.innerHTML=renderRoadmap();else if(view==="lab")root.innerHTML=renderLab();else root.innerHTML=renderSettings();updateNav()}
+function render(){if(view==="program")root.innerHTML=renderFlexible();else if(view==="archive-weekly")root.innerHTML=renderProgram();else if(view==="today")root.innerHTML=renderToday();else if(view==="overview")root.innerHTML=renderFlexibleOverview();else if(view==="courses")root.innerHTML=renderCourses();else if(view==="roadmap")root.innerHTML=renderRoadmap();else if(view==="lab")root.innerHTML=renderLab();else root.innerHTML=renderSettings();updateNav()}
 function go(v){view=v;render();window.scrollTo(0,0)}
 function jumpDate(dt){selected=clampDate(dt);view="today";render();window.scrollTo(0,0)}
 var toastTimer;
 function showToast(s){toastEl.textContent=s;toastEl.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(function(){toastEl.classList.remove("show")},2600)}
 document.addEventListener("click",function(e){
+ var fm=e.target.closest("[data-flex-module]");
+ if(fm){if(flexModuleById(fm.dataset.flexModule)){flexModule=fm.dataset.flexModule;flexTab="modules";state.notes["flex:lastModule"]=flexModule;save();go("program")}return}
+ var ft=e.target.closest("[data-flex-tab]");
+ if(ft){flexTab=ft.dataset.flexTab==="capabilities"?"capabilities":"modules";render();return}
  var wk=e.target.closest("[data-program-week]");if(wk){programWeekIndex=Number(wk.dataset.programWeek);render();return}
  var b=e.target.closest("[data-view]");if(b){go(b.dataset.view);return}
  var shift=e.target.closest("[data-shift]");if(shift){jumpDate(moveDate(selected,Number(shift.dataset.shift)));return}

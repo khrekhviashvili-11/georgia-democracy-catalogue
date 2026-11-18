@@ -26,7 +26,9 @@
     ],
     "recommendations": [],
     "completeness": "findings_verified",
-    "findings_source": "ოფიციალური წლიური ანგარიშის პრეზენტაცია; რეკომენდაციების სრული ტექსტი ჯერ არ არის სტრუქტურირებული."
+    "findings_source": "ოფიციალური წლიური ანგარიშის პრეზენტაცია; რეკომენდაციების სრული ტექსტი ჯერ არ არის სტრუქტურირებული.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "GEO-NAT-002",
@@ -51,7 +53,9 @@
     "findings": [],
     "recommendations": [],
     "completeness": "annotated",
-    "note": "თარიღი აღნიშნავს ოფიციალური ცნობის გამოქვეყნებას; ანგარიში პარლამენტს 31 მარტს წარედგინა. დეტალური მიგნებები დასამუშავებელია."
+    "note": "თარიღი აღნიშნავს ოფიციალური ცნობის გამოქვეყნებას; ანგარიში პარლამენტს 31 მარტს წარედგინა. დეტალური მიგნებები დასამუშავებელია.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "GEO-NAT-003",
@@ -72,7 +76,9 @@
     "findings": [],
     "recommendations": [],
     "completeness": "bibliographic_only",
-    "note": "პარლამენტის რეგისტრაციის თარიღი; არ განვიხილოთ დოკუმენტის დამოუკიდებლად დადასტურებულ გამოქვეყნების თარიღად."
+    "note": "პარლამენტის რეგისტრაციის თარიღი; არ განვიხილოთ დოკუმენტის დამოუკიდებლად დადასტურებულ გამოქვეყნების თარიღად.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "GEO-NGO-001",
@@ -99,7 +105,9 @@
     ],
     "recommendations": [],
     "completeness": "findings_verified",
-    "findings_source": "GYLA-ს 2025-10-23 ოფიციალური პრეზენტაცია და ანგარიშის შესავალი; სრული რეკომენდაციები ჯერ არ არის სტრუქტურირებული."
+    "findings_source": "GYLA-ს 2025-10-23 ოფიციალური პრეზენტაცია და ანგარიშის შესავალი; სრული რეკომენდაციები ჯერ არ არის სტრუქტურირებული.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-001",
@@ -117,7 +125,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-002",
@@ -135,7 +145,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-003",
@@ -153,7 +165,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-004",
@@ -171,7 +185,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-005",
@@ -189,7 +205,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-006",
@@ -207,7 +225,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-007",
@@ -225,7 +245,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-008",
@@ -243,7 +265,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-009",
@@ -261,7 +285,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-010",
@@ -279,7 +305,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-011",
@@ -297,7 +325,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-012",
@@ -315,7 +345,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-013",
@@ -333,7 +365,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-014",
@@ -351,7 +385,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-015",
@@ -369,7 +405,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-016",
@@ -387,7 +425,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-017",
@@ -405,7 +445,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-018",
@@ -423,7 +465,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-019",
@@ -441,7 +485,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-020",
@@ -459,7 +505,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-021",
@@ -477,7 +525,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-022",
@@ -495,7 +545,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-023",
@@ -513,7 +565,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-024",
@@ -531,7 +585,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-025",
@@ -549,7 +605,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-026",
@@ -567,7 +625,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-027",
@@ -585,7 +645,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-028",
@@ -603,7 +665,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-029",
@@ -621,7 +685,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-030",
@@ -639,7 +705,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-031",
@@ -657,7 +725,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-032",
@@ -675,7 +745,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-033",
@@ -693,7 +765,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-034",
@@ -711,7 +785,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-035",
@@ -729,7 +805,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-036",
@@ -747,7 +825,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-037",
@@ -765,7 +845,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-038",
@@ -783,7 +865,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-039",
@@ -801,7 +885,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-040",
@@ -819,7 +905,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-041",
@@ -837,7 +925,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-042",
@@ -855,7 +945,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-043",
@@ -873,7 +965,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-044",
@@ -890,7 +984,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-045",
@@ -907,7 +1003,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-046",
@@ -924,7 +1022,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-047",
@@ -941,7 +1041,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-048",
@@ -958,7 +1060,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-049",
@@ -975,7 +1079,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-050",
@@ -992,7 +1098,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-051",
@@ -1009,7 +1117,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-052",
@@ -1026,7 +1136,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-053",
@@ -1043,7 +1155,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-054",
@@ -1060,7 +1174,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-055",
@@ -1077,7 +1193,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-056",
@@ -1094,7 +1212,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-057",
@@ -1111,7 +1231,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-058",
@@ -1128,7 +1250,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-059",
@@ -1145,7 +1269,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-060",
@@ -1162,7 +1288,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-061",
@@ -1179,7 +1307,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-062",
@@ -1197,7 +1327,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-063",
@@ -1214,7 +1346,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-064",
@@ -1231,7 +1365,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-065",
@@ -1248,7 +1384,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-066",
@@ -1265,7 +1403,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-067",
@@ -1283,7 +1423,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-068",
@@ -1301,7 +1443,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "requires_document_level_check",
-    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე."
+    "note": "ბმული გადადის ოფიციალურ საარქივო გვერდზე და არა უშუალოდ დოკუმენტზე.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-069",
@@ -1318,7 +1462,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-070",
@@ -1335,7 +1481,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "INV-2026-071",
@@ -1352,7 +1500,9 @@
     "recommendations": [],
     "completeness": "bibliographic_only",
     "link_status": "document_page",
-    "verification_status": "requires_document_level_check"
+    "verification_status": "requires_document_level_check",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-001",
@@ -1370,7 +1520,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-002",
@@ -1388,7 +1540,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-003",
@@ -1406,7 +1560,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-004",
@@ -1424,7 +1580,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-005",
@@ -1442,7 +1600,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-006",
@@ -1460,7 +1620,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-007",
@@ -1478,7 +1640,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-008",
@@ -1496,7 +1660,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-009",
@@ -1514,7 +1680,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-010",
@@ -1532,7 +1700,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-011",
@@ -1550,7 +1720,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-012",
@@ -1568,7 +1740,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-013",
@@ -1586,7 +1760,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-014",
@@ -1604,7 +1780,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-015",
@@ -1622,7 +1800,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-016",
@@ -1640,7 +1820,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-017",
@@ -1658,7 +1840,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-018",
@@ -1676,7 +1860,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-019",
@@ -1694,7 +1880,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-020",
@@ -1712,7 +1900,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-021",
@@ -1730,7 +1920,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-022",
@@ -1748,7 +1940,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-023",
@@ -1766,7 +1960,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-024",
@@ -1784,7 +1980,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-025",
@@ -1802,7 +2000,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-026",
@@ -1820,7 +2020,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-027",
@@ -1838,7 +2040,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-028",
@@ -1856,7 +2060,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-029",
@@ -1874,7 +2080,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-030",
@@ -1892,7 +2100,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-031",
@@ -1910,7 +2120,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-032",
@@ -1928,7 +2140,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-033",
@@ -1946,7 +2160,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-034",
@@ -1964,7 +2180,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-035",
@@ -1982,7 +2200,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-036",
@@ -2000,7 +2220,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-037",
@@ -2018,7 +2240,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-038",
@@ -2036,7 +2260,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-039",
@@ -2054,7 +2280,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-040",
@@ -2072,7 +2300,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-041",
@@ -2090,7 +2320,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-042",
@@ -2108,7 +2340,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-043",
@@ -2126,7 +2360,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-044",
@@ -2144,7 +2380,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-045",
@@ -2162,7 +2400,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-046",
@@ -2180,7 +2420,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-047",
@@ -2198,7 +2440,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-048",
@@ -2216,7 +2460,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-049",
@@ -2234,7 +2480,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-050",
@@ -2252,7 +2500,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-051",
@@ -2270,7 +2520,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-052",
@@ -2288,7 +2540,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-053",
@@ -2306,7 +2560,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-054",
@@ -2324,7 +2580,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-055",
@@ -2342,7 +2600,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-056",
@@ -2360,7 +2620,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-057",
@@ -2378,7 +2640,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-058",
@@ -2396,7 +2660,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-059",
@@ -2414,7 +2680,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-060",
@@ -2432,7 +2700,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-061",
@@ -2450,7 +2720,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-062",
@@ -2468,7 +2740,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-063",
@@ -2486,7 +2760,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-064",
@@ -2504,7 +2780,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-065",
@@ -2522,7 +2800,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-066",
@@ -2540,7 +2820,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-067",
@@ -2558,7 +2840,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-068",
@@ -2576,7 +2860,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-069",
@@ -2594,7 +2880,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-070",
@@ -2612,7 +2900,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-071",
@@ -2630,7 +2920,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-072",
@@ -2648,7 +2940,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-073",
@@ -2666,7 +2960,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-074",
@@ -2684,7 +2980,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-075",
@@ -2702,7 +3000,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-076",
@@ -2720,7 +3020,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-077",
@@ -2738,7 +3040,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-078",
@@ -2756,7 +3060,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-079",
@@ -2774,7 +3080,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-080",
@@ -2792,7 +3100,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-081",
@@ -2810,7 +3120,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-082",
@@ -2828,7 +3140,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-083",
@@ -2846,7 +3160,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-084",
@@ -2864,7 +3180,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-085",
@@ -2882,7 +3200,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-086",
@@ -2900,7 +3220,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-087",
@@ -2918,7 +3240,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-088",
@@ -2936,7 +3260,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-089",
@@ -2954,7 +3280,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-090",
@@ -2972,7 +3300,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-091",
@@ -2990,7 +3320,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-092",
@@ -3008,7 +3340,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-093",
@@ -3026,7 +3360,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-094",
@@ -3044,7 +3380,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-095",
@@ -3062,7 +3400,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-096",
@@ -3080,7 +3420,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-097",
@@ -3098,7 +3440,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-098",
@@ -3116,7 +3460,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-099",
@@ -3134,7 +3480,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-100",
@@ -3152,7 +3500,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-101",
@@ -3170,7 +3520,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-102",
@@ -3188,7 +3540,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-103",
@@ -3206,7 +3560,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-104",
@@ -3224,7 +3580,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-105",
@@ -3242,7 +3600,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-106",
@@ -3260,7 +3620,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-107",
@@ -3278,7 +3640,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-108",
@@ -3296,7 +3660,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-109",
@@ -3314,7 +3680,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-110",
@@ -3332,7 +3700,9 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   },
   {
     "id": "BACKLOG-111",
@@ -3350,6 +3720,8 @@
     "completeness": "bibliographic_only",
     "link_status": "archive_only",
     "verification_status": "pending_primary_source",
-    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის."
+    "note": "არ ჩაითვალოს დადასტურებულ სრულ ტექსტად; ბმული არქივზე ან ინსტიტუციის გვერდზე გადადის.",
+    "document_status": "სრული დოკუმენტი დასამატებელია",
+    "repository_status": "ბიბლიოგრაფიული ჩანაწერი; დოკუმენტის სრული ტექსტი ჯერ არ არის ატვირთული"
   }
 ]

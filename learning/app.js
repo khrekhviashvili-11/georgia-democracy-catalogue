@@ -266,7 +266,7 @@ function renderFlexModules(){
   var course=apCourse(id);return course?link(course.name,course.url):"";
  }).filter(Boolean).join("");
  return '<div class="flex-intro"><span class="eyebrow">FLEXIBLE LEARNING PATH</span><h1>ტექნოლოგიების სისტემური შესწავლა</h1><p>'+tb(data.intro)+'</p></div>'+
-  '<div class="flex-steps-summary"><div><strong>6</strong><small>ლოგიკური მოდული</small></div><div><strong>'+data.modules.reduce(function(n,m){return n+m.topics.length},0)+'</strong><small>მოკლე თემა</small></div><div><strong>7</strong><small>შერჩეული კურსი</small></div></div>'+
+  '<div class="flex-steps-summary"><div><strong>6</strong><small>ლოგიკური მოდული</small></div><div><strong>'+data.modules.reduce(function(n,m){return n+m.topics.length},0)+'</strong><small>მოკლე თემა</small></div><div><strong>'+ap().courses.length+'</strong><small>შერჩეული კურსი</small></div></div>'+
   '<div class="panel flex-guide"><strong>როგორ გამოიყენო</strong><p>'+tb(data.howToUse)+'</p><p class="muted">პროგრესის ნიშანი ნიშნავს მხოლოდ იმას, რომ თემას გაეცანი. არჩევითი პრაქტიკა და გაღრმავება საერთო პროცენტს არ ამცირებს.</p></div>'+
   '<div class="flex-heading"><h2>აირჩიე მოდული</h2><small>სურვილისამებრ ნებისმიერი თემიდან დაიწყე</small></div>'+
   '<div class="flex-module-grid">'+selection+'</div>'+

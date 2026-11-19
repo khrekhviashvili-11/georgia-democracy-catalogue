@@ -10,7 +10,7 @@ This is **not** a programmer bootcamp or an obligatory course-completion schedul
 
 ## Primary learning path
 
-Six modules in a logical progression, accessible in any order:
+Six modules in a logical progression, accessible in any order (32 topics in total):
 
 1. **Technology foundations:** website vs web app, frontend/backend/database/hosting, HTML/CSS/JS/JSON/PDF, inputs/outputs, basic requests.
 2. **GitHub and projects:** repository, commit, branch, GitHub Pages, GitHub Actions, public-repository risks.
@@ -28,8 +28,9 @@ Every lesson has three separately tracked activities:
 
 Only the foundation count is summarized by module. There is **no mandatory assessment, deadline, certification, or forced transition**. The practical and deepening counts are separate and do not penalize progression.
 
-## Seven enrolled Udemy courses
+## Eight enrolled Udemy courses
 
+- Complete Claude AI Masterclass: Beginner to Advanced (Claude general ecosystem: Projects, Artifacts, Skills, Connectors)
 - Claude Code – The Ultimate Guide! Build Websites & SaaS Apps
 - Complete Claude Code Course: Beginner to Advanced
 - GitHub Actions – The Complete Guide

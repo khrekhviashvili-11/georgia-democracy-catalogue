@@ -134,7 +134,7 @@ function renderCourseList(){
  return '<article class="course-card"><span class="course-provider">'+tb(c.provider)+'</span><h3>'+tb(c.title)+'</h3><div class="course-meta"><span>'+tb(c.modules)+' მოდული</span><span>·</span><span>'+tb(c.duration)+'</span><span>·</span><span>'+tb(c.stage)+'</span></div><a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(cleanUrl(c.url))+'">კურსის გახსნა ↗</a></article>';
  }).join("")+(list.length?"":'<p class="empty">ასეთი კურსი ვერ მოიძებნა.</p>')+"</div>";
 }
-function renderCourses(){return '<div class="page-intro"><div><span class="eyebrow">COURSE LIBRARY</span><h1>კურსების ბიბლიოთეკა</h1><p class="sub">8 ჩარიცხული კურსი და 1 ახალი Python რეკომენდაცია. Udemy Personal Plan-ზე ხელმისაწვდომობა გადაამოწმე კურსის გვერდზე.</p></div></div>'+renderActiveCourses()+'<div class="section-head"><h2>წინა გეგმის კურსები · არქივი</h2></div><input class="search" id="courseSearch" type="search" placeholder="მოძებნე კურსი ან უნივერსიტეტი..." value="'+tb(search)+'"><div id="courseList">'+renderCourseList()+'</div>'}
+function renderCourses(){return '<div class="page-intro"><div><span class="eyebrow">COURSE LIBRARY</span><h1>კურსების ბიბლიოთეკა</h1><p class="sub">ცხრავე კურსში ჩარიცხული ხარ Udemy Personal Plan-ის ფარგლებში.</p></div></div>'+renderActiveCourses()+'<div class="section-head"><h2>წინა გეგმის კურსები · არქივი</h2></div><input class="search" id="courseSearch" type="search" placeholder="მოძებნე კურსი ან უნივერსიტეტი..." value="'+tb(search)+'"><div id="courseList">'+renderCourseList()+'</div>'}
 function renderRoadmap(){
  var groups=[{label:"INTENSIVE PHASE",name:"პირველი ორი თვე",range:"14.11.2026 — 13.01.2027",desc:"ყოველდღიური სწავლა: Claude, GitHub, Google AI, ChatGPT, მონაცემები და Python",time:"94 სთ"},{label:"SPECIALIZATION PHASE",name:"შემდეგი ოთხი თვე",range:"14.01.2027 — 14.05.2027",desc:"AI აგენტები, RAG, სამართლებრივი კვლევა, უსაფრთხოება და OS-ების პირველი სპეციფიკაციები",time:"5–7 სთ/კვ."}];
  return '<div class="page-intro"><div><span class="eyebrow">6 MONTH ROADMAP</span><h1>განვითარების მარშრუტი</h1><p class="sub">პირველი ორი თვე ინტენსიური, მომდევნო ოთხი — ეტაპობრივი.</p></div></div>'+
@@ -178,7 +178,7 @@ function apCourse(id){return ap().courses.find(function(c){return c.id===id})}
 function renderActiveCourses(){
  return '<div class="active-courses">'+ap().courses.map(function(c){
   var kind=c.role==="primary"?"მთავარი კურსი":c.role==="reference"?"დამატებითი": "ახლად შერჩეული";
-  var access=c.enrolled?"ჩარიცხული":"რეკომენდებულია · Personal Plan გადასამოწმებელია";
+  var access=c.enrolled?"ჩარიცხული":"ჩარიცხვა გადაამოწმე";
   return '<div class="course-card"><span class="course-provider">'+tb(c.track)+'</span><h3>'+tb(c.name)+'</h3><div class="course-meta"><span>'+tb(kind)+'</span><span>·</span><span>'+tb(access)+'</span></div><p class="muted" style="font-size:12px">'+tb(c.note)+'</p><a target="_blank" rel="noopener noreferrer" href="'+tb(c.url)+'">Udemy-ზე გახსნა ↗</a></div>';
  }).join("")+'</div>';
 }
@@ -202,12 +202,12 @@ function renderProgram(){
  '<div class="grid-head">'+hero("PROJECT-FIRST LEARNING","Research OS",data.guiding,total.percent)+
  '<div class="metric-card"><span class="metric-label">მთლიანი შესრულება</span><div class="metric-value">'+total.percent+'%</div>'+progressLine(total.percent)+'<span class="metric-foot">'+total.done+' / '+total.total+' მონიშვნა</span></div>'+
  '<div class="metric-card"><span class="metric-label">ამ კვირის შესრულება</span><div class="metric-value">'+current.percent+'%</div>'+progressLine(current.percent)+'<span class="metric-foot">'+current.done+' / '+current.total+' მონიშვნა</span></div></div>'+
- '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება რვავე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. რვა ადრე შერჩეულ კურსში ჩარიცხული ხარ; Python-ის კურსი დამატებულია რეკომენდაციის სახით და მისი ხელმისაწვდომობა გადასამოწმებელია.</p></div>'+
+ '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება ცხრავე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. ცხრავე კურსში ჩარიცხული ხარ, მათ შორის Python-ის ახალ კურსში.</p></div>'+
  '<div class="section-head"><h2>აირჩიე კვირა</h2><small>შესრულების % დამოუკიდებელია</small></div><div class="program-week-grid">'+weekButtons+'</div>'+
  '<div class="panel program-mission"><span class="eyebrow">WEEK '+(programWeekIndex+1)+' · '+tb(w.start)+' — '+tb(w.end)+'</span><h2>'+tb(w.name)+'</h2><p><strong>რას გაიგებ:</strong> '+tb(w.goal)+'</p><p><strong>კვირის ხელშესახები შედეგი:</strong> '+tb(w.deliverable)+'</p>'+progressLine(current.percent)+'</div>'+
  '<div class="section-head"><h2>სასწავლო მოდულები და პრაქტიკული ტესტები</h2><small>'+w.tasks.length+' დავალება</small></div><div class="program-tasks">'+tasks+'</div>'+
  '<div class="panel notes-panel"><h3>✎ ამ კვირის სამუშაო ჩანაწერი</h3><textarea data-notes="program:'+w.id+'" placeholder="რა გავიგე? რა შეცდომა მივიღე? როგორ გამოვასწორე?">'+tb(state.notes["program:"+w.id]||"")+'</textarea><p class="hint">მხოლოდ ამ მოწყობილობაზე ინახება. სარეზერვო ასლი: „მონაცემები“ → ექსპორტი.</p></div>'+
- '<div class="section-head"><h2>კურსების ბიბლიოთეკა (8 ჩარიცხული + 1 რეკომენდებული)</h2></div>'+renderActiveCourses();
+ '<div class="section-head"><h2>კურსების ბიბლიოთეკა (9 ჩარიცხული)</h2></div>'+renderActiveCourses();
 }
 
 

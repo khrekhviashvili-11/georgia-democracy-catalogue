@@ -29,10 +29,10 @@ Every lesson has three separately tracked activities:
 
 Only the foundation count is summarized by module. There is **no mandatory assessment, deadline, certification, or forced transition**. The practical and deepening counts are separate and do not penalize progression.
 
-## Udemy learning resources (eight enrolled + one recommended)
+## Udemy learning resources (nine enrolled)
 
 - Complete Claude AI Masterclass: Beginner to Advanced (Claude general ecosystem: Projects, Artifacts, Skills, Connectors)
-- **Recommended, enrolment and Personal Plan access unverified:** Automate the Boring Stuff with Python Programming (Al Sweigart, 9h 31m total; course selection focuses on essentials and document automation)
+- **Confirmed enrolled via user, available in Udemy Personal Plan:** Automate the Boring Stuff with Python Programming (Al Sweigart, 9h 31m total; course selection focuses on essentials and document automation)
 - Claude Code – The Ultimate Guide! Build Websites & SaaS Apps
 - Complete Claude Code Course: Beginner to Advanced
 - GitHub Actions – The Complete Guide
@@ -41,7 +41,7 @@ Only the foundation count is summarized by module. There is **no mandatory asses
 - Mastering ChatGPT Work and GPT-6 Astra [2026]
 - Gemini Notebook: The Ultimate in AI NoteTaking (2026)
 
-For the eight existing courses, links are to their previously selected Udemy pages. The Python course is a recommendation, not a confirmed enrolment; availability in Udemy Personal Plan is unverified. Lesson/section descriptions within the app are **topical navigation hints**, not verified deep links to specific paid videos, and may differ as Udemy course sections are updated.
+All nine courses are recorded as enrolled, based on user confirmation. The Python course is available through the user's Udemy Personal Plan. Lesson/section descriptions within the app are **topical navigation hints**, not verified deep links to specific paid videos, and may differ as Udemy course sections are updated.
 
 ## Preserving earlier work
 

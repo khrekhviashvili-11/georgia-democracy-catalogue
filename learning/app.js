@@ -202,12 +202,12 @@ function renderProgram(){
  '<div class="grid-head">'+hero("PROJECT-FIRST LEARNING","Research OS",data.guiding,total.percent)+
  '<div class="metric-card"><span class="metric-label">მთლიანი შესრულება</span><div class="metric-value">'+total.percent+'%</div>'+progressLine(total.percent)+'<span class="metric-foot">'+total.done+' / '+total.total+' მონიშვნა</span></div>'+
  '<div class="metric-card"><span class="metric-label">ამ კვირის შესრულება</span><div class="metric-value">'+current.percent+'%</div>'+progressLine(current.percent)+'<span class="metric-foot">'+current.done+' / '+current.total+' მონიშვნა</span></div></div>'+
- '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება შვიდივე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. შვიდივე კურსში უკვე ჩარიცხული ხარ.</p></div>'+
+ '<div class="panel"><span class="eyebrow">პირველ რიგში</span><h2 style="margin:7px 0 8px">არ გვჭირდება რვავე კურსის თავიდან ბოლომდე გავლა</h2><p class="muted">ორ Claude Code და ორ GitHub Actions კურსს შორის გადაფარვაა. თითოეულ საკითხს ვსწავლობთ იმ მომენტში, როცა Research OS-ის კონკრეტულ ამოცანაში დაგვჭირდება. რვავე კურსში უკვე ჩარიცხული ხარ.</p></div>'+
  '<div class="section-head"><h2>აირჩიე კვირა</h2><small>შესრულების % დამოუკიდებელია</small></div><div class="program-week-grid">'+weekButtons+'</div>'+
  '<div class="panel program-mission"><span class="eyebrow">WEEK '+(programWeekIndex+1)+' · '+tb(w.start)+' — '+tb(w.end)+'</span><h2>'+tb(w.name)+'</h2><p><strong>რას გაიგებ:</strong> '+tb(w.goal)+'</p><p><strong>კვირის ხელშესახები შედეგი:</strong> '+tb(w.deliverable)+'</p>'+progressLine(current.percent)+'</div>'+
  '<div class="section-head"><h2>სასწავლო მოდულები და პრაქტიკული ტესტები</h2><small>'+w.tasks.length+' დავალება</small></div><div class="program-tasks">'+tasks+'</div>'+
  '<div class="panel notes-panel"><h3>✎ ამ კვირის სამუშაო ჩანაწერი</h3><textarea data-notes="program:'+w.id+'" placeholder="რა გავიგე? რა შეცდომა მივიღე? როგორ გამოვასწორე?">'+tb(state.notes["program:"+w.id]||"")+'</textarea><p class="hint">მხოლოდ ამ მოწყობილობაზე ინახება. სარეზერვო ასლი: „მონაცემები“ → ექსპორტი.</p></div>'+
- '<div class="section-head"><h2>შერჩეული შვიდი კურსი</h2></div>'+renderActiveCourses();
+ '<div class="section-head"><h2>შერჩეული რვა კურსი</h2></div>'+renderActiveCourses();
 }
 
 
@@ -294,7 +294,7 @@ function renderFlexible(){
  '<div><span class="eyebrow">არჩევითი პრაქტიკა</span><strong>'+t.practiced+'</strong><small>შენ თვითონ წყვეტ, რომელი გამოსცადო</small></div><div><span class="eyebrow">გაღრმავება</span><strong>'+t.deepened+'</strong><small>საჭიროების მიხედვით</small></div></div>'+
  '<div class="flex-tabs"><button type="button" data-flex-tab="modules" class="'+(flexTab==="modules"?"active":"")+'">სასწავლო მოდულები</button><button type="button" data-flex-tab="capabilities" class="'+(flexTab==="capabilities"?"active":"")+'">შესაძლებლობების ბიბლიოთეკა</button></div>'+
  (flexTab==="capabilities"?renderFlexCapabilities():renderFlexModules())+
- '<div class="flex-bottom-links"><button class="btn" type="button" data-view="courses">ჩემი 7 Udemy კურსი ↗</button>'+
+ '<div class="flex-bottom-links"><button class="btn" type="button" data-view="courses">ჩემი 8 Udemy კურსი ↗</button>'+
  '<button class="btn" type="button" data-view="archive-weekly">წინა 8-კვირიანი გეგმა ↗</button>'+
  '<button class="btn" type="button" data-view="today">პირველი დღიური გეგმა ↗</button></div>';
 }

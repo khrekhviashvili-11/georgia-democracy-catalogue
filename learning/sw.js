@@ -1,4 +1,4 @@
-const CACHE_NAME="learning-os-cache-v3";
+const CACHE_NAME="learning-os-cache-v4";
 const FILES=["./","./index.html","./style.css","./data.js","./build-lab.js","./active-program.js","./flexible-program.js","./app.js","./manifest.webmanifest","./icon.svg"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
